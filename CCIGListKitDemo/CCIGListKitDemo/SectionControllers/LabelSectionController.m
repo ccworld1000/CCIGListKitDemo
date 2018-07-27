@@ -12,7 +12,6 @@
 
 @interface LabelSectionController ()
 
-//@property (nonatomic, copy) NSString *object;
 @property (nonatomic, strong) DemoItem *item;
 
 @end
