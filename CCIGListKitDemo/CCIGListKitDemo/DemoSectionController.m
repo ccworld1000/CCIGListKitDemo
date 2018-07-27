@@ -35,8 +35,11 @@
 
 - (void)didSelectItemAtIndex:(NSInteger)index {
     NSLog(@"CC didSelectItemAtIndex : %ld", index);
-    UIViewController *vc = [UIViewController new];
-
+//    UIViewController *vc = [UIViewController new];
+    
+    NSString *classString = self.item.controllerClass;
+//    [NSStringF];
+    UIViewController *vc = [NSClassFromString(classString) new];
     vc.title = self.item.name;
 //    [self.viewController.navigationController pushViewController:vc animated: YES];
       [self.viewController.navigationController pushViewController:vc animated: NO];

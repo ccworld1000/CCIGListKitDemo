@@ -18,6 +18,10 @@
 
 @implementation DemoItem
 
+- (instancetype) initWithName : (NSString *)name {
+    return [self initWithName:name controllerClass:nil controllerIdentifier:nil];
+}
+
 - (instancetype) initWithName : (NSString *)name controllerClass: (NSString *) controllerClass {
     return [self initWithName:name controllerClass:controllerClass controllerIdentifier:nil];
 }

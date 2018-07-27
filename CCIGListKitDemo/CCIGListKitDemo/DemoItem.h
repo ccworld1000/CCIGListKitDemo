@@ -16,6 +16,8 @@
 @property (nonatomic, copy, readonly) NSString *controllerClass;
 @property (nonatomic, copy, readonly) NSString *controllerIdentifier;
 
+- (instancetype) initWithName : (NSString *)name;
 - (instancetype) initWithName : (NSString *)name controllerClass: (NSString *) controllerClass;
+- (instancetype) initWithName : (NSString *)name controllerClass: (NSString *) controllerClass controllerIdentifier : (NSString *) controllerIdentifier;
 
 @end

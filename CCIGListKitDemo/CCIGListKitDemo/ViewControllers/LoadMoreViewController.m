@@ -7,7 +7,10 @@
 //
 
 #import "LoadMoreViewController.h"
+#import "LabelSectionController.h"
+#import "DemoItem.h"
 #import <IGListKit.h>
+#import "DemoSectionController.h"
 
 @interface LoadMoreViewController () <IGListAdapterDataSource, UIScrollViewDelegate> {
     BOOL loading;
@@ -32,7 +35,7 @@
 - (void) loadingItems {
     items = [NSMutableArray array];
     for (int i = 0; i < 20 ; i++) {
-        [items addObject:@(i)];
+        [items addObject: [[DemoItem alloc] initWithName:[NSString stringWithFormat:@"%@", @(i)]]];
     }
 }
 
@@ -54,14 +57,22 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self loadingItems];
+    
+    NSLog(@"CC items : %@", items);
+    
+    self.view.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:self.collectionView];
-    self.adapter.collectionView = self.view;
+    self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
-    self.adapter.scrollViewDelegate = self;
 }
 
-- (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    return items;
+- (NSArray<id<IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {;
+    return [items copy];
+}
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    return [LabelSectionController new];
 }
 
 - (UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
