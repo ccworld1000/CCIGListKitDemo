@@ -9,6 +9,7 @@
 #import "DemoSectionController.h"
 #import "LabelCell.h"
 #import "DemoItem.h"
+#import <CCDebug/CCDebug.h>
 
 @interface DemoSectionController()
 
@@ -38,8 +39,10 @@
 //    UIViewController *vc = [UIViewController new];
     
     NSString *classString = self.item.controllerClass;
-//    [NSStringF];
+    CCDebugPrint(classString);
+    
     UIViewController *vc = [NSClassFromString(classString) new];
+   
     vc.title = self.item.name;
 //    [self.viewController.navigationController pushViewController:vc animated: YES];
       [self.viewController.navigationController pushViewController:vc animated: NO];

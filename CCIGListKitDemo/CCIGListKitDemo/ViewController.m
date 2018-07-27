@@ -37,8 +37,8 @@
               [[DemoItem alloc] initWithName:@"Nested Adapter" controllerClass: @"NestedAdapterViewController"],
               [[DemoItem alloc] initWithName:@"Empty View" controllerClass: @"EmptyViewController"],
               [[DemoItem alloc] initWithName:@"Single Section Controller" controllerClass: @"SingleSectionViewController"],
-              //              [[DemoItem alloc] initWithName:@"Storyboard" controllerClass: @"SingleSectionViewController.self,controllerIdentifier: "demo"),
-              //               [[DemoItem alloc] initWithName:@"Single Section Storyboard" controllerClass: @"SingleSectionStoryboardViewController.self,controllerIdentifier: "singleSectionDemo"),
+              [[DemoItem alloc] initWithName:@"Storyboard" controllerClass: @"SingleSectionViewController" controllerIdentifier: @"demo"],
+              [[DemoItem alloc] initWithName:@"Single Section Storyboard" controllerClass: @"SingleSectionStoryboardViewController" controllerIdentifier: @"singleSectionDemo"],
               [[DemoItem alloc] initWithName:@"Working Range" controllerClass: @"WorkingRangeViewController"],
               [[DemoItem alloc] initWithName:@"Diff Algorithm" controllerClass: @"DiffTableViewController"],
               [[DemoItem alloc] initWithName:@"Supplementary Views" controllerClass: @"SupplementaryViewController"],
@@ -56,8 +56,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
+
     self.title = @"Demos";
     [self loadingDemos];
     self.adapter.collectionView = self.collectionView;
