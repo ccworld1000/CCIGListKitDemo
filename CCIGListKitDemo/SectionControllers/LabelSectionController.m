@@ -8,7 +8,6 @@
 
 #import "LabelSectionController.h"
 #import "LabelCell.h"
-#import "DemoItem.h"
 
 @interface LabelSectionController ()
 

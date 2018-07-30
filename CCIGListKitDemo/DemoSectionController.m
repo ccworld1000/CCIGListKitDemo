@@ -8,8 +8,7 @@
 
 #import "DemoSectionController.h"
 #import "LabelCell.h"
-#import "DemoItem.h"
-#import <CCDebug/CCDebug.h>
+
 
 @interface DemoSectionController()
 

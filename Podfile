@@ -6,6 +6,7 @@ target 'CCIGListKitDemo' do
   # use_frameworks!
 
   # Pods for CCIGListKitDemo
+  pod 'CCFont'
   pod 'CCDebug'
   pod 'IGListKit'
   

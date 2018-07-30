@@ -17,6 +17,9 @@
 		001E26342109B634000C40B7 /* DemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E26332109B634000C40B7 /* DemoSectionController.m */; };
 		001E26372109B888000C40B7 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E26362109B888000C40B7 /* LabelCell.m */; };
 		001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E263A2109CD38000C40B7 /* LoadMoreViewController.m */; };
+		00220C4D210EEC8500630EBC /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C4C210EEC8500630EBC /* EmptyViewController.m */; };
+		00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C50210F0CDF00630EBC /* RemoveSectionController.m */; };
+		00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C54210F0D8C00630EBC /* RemoveCell.m */; };
 		002B6076210AAF830091C655 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6075210AAF830091C655 /* LabelSectionController.m */; };
 		002B6079210AFD620091C655 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6078210AFD620091C655 /* SearchViewController.m */; };
 		3179BDE67403D859A44A1C75 /* libPods-CCIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */; };
@@ -41,6 +44,13 @@
 		001E26362109B888000C40B7 /* LabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
 		001E26392109CD38000C40B7 /* LoadMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
 		001E263A2109CD38000C40B7 /* LoadMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreViewController.m; sourceTree = "<group>"; };
+		00220C4B210EEC8500630EBC /* EmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EmptyViewController.h; path = ../../../../Desktop/EmptyViewController.h; sourceTree = "<group>"; };
+		00220C4C210EEC8500630EBC /* EmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EmptyViewController.m; path = ../../../../Desktop/EmptyViewController.m; sourceTree = "<group>"; };
+		00220C4E210EEE1800630EBC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		00220C4F210F0CDF00630EBC /* RemoveSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveSectionController.h; sourceTree = "<group>"; };
+		00220C50210F0CDF00630EBC /* RemoveSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveSectionController.m; sourceTree = "<group>"; };
+		00220C53210F0D8C00630EBC /* RemoveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveCell.h; sourceTree = "<group>"; };
+		00220C54210F0D8C00630EBC /* RemoveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveCell.m; sourceTree = "<group>"; };
 		002B6074210AAF830091C655 /* LabelSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LabelSectionController.h; sourceTree = "<group>"; };
 		002B6075210AAF830091C655 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
 		002B6077210AFD620091C655 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -83,6 +93,7 @@
 		001E26182109A817000C40B7 /* CCIGListKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				00220C52210F0D6900630EBC /* Cells */,
 				002B6073210AAF620091C655 /* SectionControllers */,
 				001E26382109C9E9000C40B7 /* ViewControllers */,
 				001E26192109A817000C40B7 /* AppDelegate.h */,
@@ -100,6 +111,7 @@
 				001E26332109B634000C40B7 /* DemoSectionController.m */,
 				001E26352109B888000C40B7 /* LabelCell.h */,
 				001E26362109B888000C40B7 /* LabelCell.m */,
+				00220C4E210EEE1800630EBC /* PrefixHeader.pch */,
 			);
 			path = CCIGListKitDemo;
 			sourceTree = "<group>";
@@ -111,8 +123,19 @@
 				001E263A2109CD38000C40B7 /* LoadMoreViewController.m */,
 				002B6077210AFD620091C655 /* SearchViewController.h */,
 				002B6078210AFD620091C655 /* SearchViewController.m */,
+				00220C4B210EEC8500630EBC /* EmptyViewController.h */,
+				00220C4C210EEC8500630EBC /* EmptyViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		00220C52210F0D6900630EBC /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				00220C53210F0D8C00630EBC /* RemoveCell.h */,
+				00220C54210F0D8C00630EBC /* RemoveCell.m */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		002B6073210AAF620091C655 /* SectionControllers */ = {
@@ -120,6 +143,8 @@
 			children = (
 				002B6074210AAF830091C655 /* LabelSectionController.h */,
 				002B6075210AAF830091C655 /* LabelSectionController.m */,
+				00220C4F210F0CDF00630EBC /* RemoveSectionController.h */,
+				00220C50210F0CDF00630EBC /* RemoveSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -252,12 +277,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */,
+				00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */,
 				001E261E2109A817000C40B7 /* ViewController.m in Sources */,
 				001E26342109B634000C40B7 /* DemoSectionController.m in Sources */,
 				001E26372109B888000C40B7 /* LabelCell.m in Sources */,
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
+				00220C4D210EEC8500630EBC /* EmptyViewController.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
@@ -402,6 +430,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CCIGListKitDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = CCIGListKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -419,6 +450,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/CCIGListKitDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = CCIGListKitDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

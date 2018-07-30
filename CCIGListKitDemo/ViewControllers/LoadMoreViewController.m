@@ -8,8 +8,6 @@
 
 #import "LoadMoreViewController.h"
 #import "LabelSectionController.h"
-#import "DemoItem.h"
-#import <IGListKit.h>
 #import "DemoSectionController.h"
 
 @interface LoadMoreViewController () <IGListAdapterDataSource, UIScrollViewDelegate> {

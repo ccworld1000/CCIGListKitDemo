@@ -8,8 +8,6 @@
 
 #import <Foundation/Foundation.h>
 
-#import <IGListKit.h>
-
 @interface DemoItem : NSObject <IGListDiffable>
 
 @property (nonatomic, copy, readonly) NSString *name;

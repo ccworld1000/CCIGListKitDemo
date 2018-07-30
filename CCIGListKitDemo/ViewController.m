@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "DemoItem.h"
 #import "DemoSectionController.h"
 
 @interface ViewController () <IGListAdapterDataSource> {

@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import <CCDebug/CCDebug.h>
 
 @interface AppDelegate ()
 
