@@ -39,9 +39,13 @@
     CCDebugPrint(classString);
     
     UIViewController *vc = [NSClassFromString(classString) new];
-   
-    vc.title = self.item.name;
-    [self.viewController.navigationController pushViewController:vc animated: NO];
+
+    if (vc) {
+        vc.title = self.item.name;
+        [self.viewController.navigationController pushViewController:vc animated: NO];
+    } else {
+        CCDebugWarningPrint([NSString stringWithFormat:@"%@ : [The interface may not be implemented] ", classString]);
+    }
 }
 
 @end

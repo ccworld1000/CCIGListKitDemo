@@ -8,6 +8,8 @@
 
 #import "SearchViewController.h"
 #import <IGListKit.h>
+#import "DemoItem.h"
+#import "LabelSectionController.h"
 
 @interface SearchViewController () <IGListAdapterDataSource>
 
@@ -26,6 +28,15 @@
     return _adapter;
 }
 
+- (UICollectionView *)collectionView {
+    if (!_collectionView) {
+        _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+    }
+    
+    return _collectionView;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -35,18 +46,28 @@
     self.adapter.dataSource = self;
 }
 
-//- (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-//    
-//}
-//
-//
-//- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-//    
-//}
-//
-//- (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
-//    return nil;
-//}
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    
+    self.collectionView.frame = self.view.bounds;
+}
+
+- (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    return @[
+             [[DemoItem alloc] initWithName:@"Tail Loading" controllerClass: @"LoadMoreViewController"],
+             [[DemoItem alloc] initWithName:@"Search Autocomplete" controllerClass: @"SearchViewController"],
+             [[DemoItem alloc] initWithName:@"Mixed Data" controllerClass: @"MixedDataViewController"],
+             ];
+}
+
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    return [LabelSectionController new];
+}
+
+- (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
+}
 
 
 

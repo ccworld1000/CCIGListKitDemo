@@ -11,6 +11,7 @@
 @interface LabelCell()
 
 @property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) CALayer *separator;
 
 @end
 
@@ -22,6 +23,15 @@
 
 - (void)setText:(NSString *)text {
     self.label.text = text;
+}
+
+- (CALayer *)separator {
+    if (!_separator) {
+        _separator = [CALayer layer];
+        _separator.backgroundColor = [UIColor colorWithRed:200 / 255.0 green:199 / 255.0 blue:204 / 255.0 alpha:1].CGColor;
+    }
+    
+    return _separator;
 }
 
 - (UILabel *)label {
@@ -39,14 +49,22 @@
     
     if (self) {
         [self addSubview:self.label];
+        [self.layer addSublayer:self.separator];
     }
     
     return self;
 }
 
 - (void)layoutSubviews {
-//    UIEdgeInsetsMake(8, 15, 8, 15);
-    self.label.frame = UIEdgeInsetsInsetRect(self.contentView.bounds, UIEdgeInsetsMake(8, 15, 8, 15));
+    [super layoutSubviews];
+    
+    UIEdgeInsets insets = UIEdgeInsetsMake(8, 15, 8, 15);
+    CGRect bounds = self.contentView.bounds;
+    CGFloat height = 0.5;
+    CGFloat left = insets.left;
+    
+    self.label.frame = UIEdgeInsetsInsetRect(bounds, insets);
+    self.separator.frame = CGRectMake(left, bounds.size.height - height, bounds.size.width - left, height);
 }
 
 @end
