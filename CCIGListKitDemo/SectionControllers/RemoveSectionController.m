@@ -18,6 +18,12 @@
 
 @implementation RemoveSectionController
 
+- (void) removeButtonHandle : (UIButton *) button {
+    if ([_deleagte respondsToSelector:@selector(wantsRemoved:)]) {
+        [_deleagte wantsRemoved:self];
+    }
+}
+
 - (instancetype) init {
     self = [super init];
     if (self) {
@@ -35,6 +41,7 @@
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     RemoveCell *cell = [self.collectionContext dequeueReusableCellOfClass:[RemoveCell class] forSectionController:self atIndex:index];
     cell.label.text = [NSString stringWithFormat:@"Cell: %ld", [number integerValue] + 1];
+    [cell.button addTarget:self action:@selector(removeButtonHandle:) forControlEvents:UIControlEventTouchUpInside];
     
     return cell;
 }

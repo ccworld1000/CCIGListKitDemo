@@ -21,7 +21,10 @@
 		00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C54210F0D8C00630EBC /* RemoveCell.m */; };
 		002B6076210AAF830091C655 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6075210AAF830091C655 /* LabelSectionController.m */; };
 		002B6079210AFD620091C655 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6078210AFD620091C655 /* SearchViewController.m */; };
+		007FA54B211066BC00D9F49A /* NibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA549211066BC00D9F49A /* NibCell.m */; };
+		007FA54C211066BC00D9F49A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007FA54A211066BC00D9F49A /* NibCell.xib */; };
 		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
+		0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1BB211054860089568D /* SingleSectionViewController.m */; };
 		3179BDE67403D859A44A1C75 /* libPods-CCIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -53,8 +56,13 @@
 		002B6075210AAF830091C655 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
 		002B6077210AFD620091C655 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		002B6078210AFD620091C655 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		007FA548211066BC00D9F49A /* NibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
+		007FA549211066BC00D9F49A /* NibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
+		007FA54A211066BC00D9F49A /* NibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
 		0085E1B7211023790089568D /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
 		0085E1B8211023790089568D /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
+		0085E1BA211054860089568D /* SingleSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionViewController.h; sourceTree = "<group>"; };
+		0085E1BB211054860089568D /* SingleSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionViewController.m; sourceTree = "<group>"; };
 		5A23DBB342ACCA14A1BF71BD /* Pods-CCIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		632D38CE209EC4054E0D4695 /* Pods-CCIGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCIGListKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +133,8 @@
 				002B6078210AFD620091C655 /* SearchViewController.m */,
 				0085E1B7211023790089568D /* EmptyViewController.h */,
 				0085E1B8211023790089568D /* EmptyViewController.m */,
+				0085E1BA211054860089568D /* SingleSectionViewController.h */,
+				0085E1BB211054860089568D /* SingleSectionViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -134,6 +144,9 @@
 			children = (
 				00220C53210F0D8C00630EBC /* RemoveCell.h */,
 				00220C54210F0D8C00630EBC /* RemoveCell.m */,
+				007FA548211066BC00D9F49A /* NibCell.h */,
+				007FA549211066BC00D9F49A /* NibCell.m */,
+				007FA54A211066BC00D9F49A /* NibCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -226,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				001E26262109A818000C40B7 /* LaunchScreen.storyboard in Resources */,
+				007FA54C211066BC00D9F49A /* NibCell.xib in Resources */,
 				001E26232109A818000C40B7 /* Assets.xcassets in Resources */,
 				001E26212109A817000C40B7 /* Main.storyboard in Resources */,
 			);
@@ -284,11 +298,13 @@
 				001E26372109B888000C40B7 /* LabelCell.m in Sources */,
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
+				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
+				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,8 +8,16 @@
 
 #import "IGListSectionController.h"
 
+@class RemoveSectionController;
+
+@protocol RemoveSectionDelegate <NSObject>
+
+- (void) wantsRemoved : (RemoveSectionController *) sectionController;
+
+@end
+
 @interface RemoveSectionController : IGListSectionController
 
-
+@property (nonatomic, weak) id<RemoveSectionDelegate> deleagte;
 
 @end

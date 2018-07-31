@@ -9,7 +9,7 @@
 #import "EmptyViewController.h"
 #import "RemoveSectionController.h"
 
-@interface EmptyViewController () <IGListAdapterDataSource>
+@interface EmptyViewController () <IGListAdapterDataSource, RemoveSectionDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
@@ -24,7 +24,7 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [CCColor whiteColor];
     }
     
     return _collectionView;
@@ -40,12 +40,13 @@
 
 - (void) onAdd {
     CCDebugPrint(@"onAdd");
+
+    [self.data addObject:@(self.tally)];
+    self.tally += 1;
+    [self.adapter performUpdatesAnimated:YES completion:nil];
 }
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    
+- (void) loadingData {
     self.tally = 4;
     if (!_data) {
         _data = [NSMutableArray array];
@@ -53,6 +54,13 @@
     for (int i = 0; i < self.tally; i++) {
         [_data addObject:@(i)];
     }
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view.
+    
+    [self loadingData];
     
     self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(onAdd)];
     
@@ -71,9 +79,10 @@
     return _data;
 }
 
-
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [RemoveSectionController new];
+    RemoveSectionController *section = [RemoveSectionController new];
+    section.deleagte = self;
+    return section;
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
@@ -83,6 +92,16 @@
     label.text = @"No more data!";
     
     return label;
+}
+
+- (void)wantsRemoved:(RemoveSectionController *)sectionController {
+    NSInteger section = [self.adapter sectionForSectionController:sectionController];
+    NSUInteger index = [self.data indexOfObject:[self.adapter objectAtSection:section]];
+
+    if (index != NSNotFound) {
+        [self.data removeObjectAtIndex:index];
+        [self.adapter performUpdatesAnimated:YES completion:nil];
+    }
 }
 
 
