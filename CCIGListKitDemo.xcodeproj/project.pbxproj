@@ -17,11 +17,11 @@
 		001E26342109B634000C40B7 /* DemoSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E26332109B634000C40B7 /* DemoSectionController.m */; };
 		001E26372109B888000C40B7 /* LabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E26362109B888000C40B7 /* LabelCell.m */; };
 		001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E263A2109CD38000C40B7 /* LoadMoreViewController.m */; };
-		00220C4D210EEC8500630EBC /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C4C210EEC8500630EBC /* EmptyViewController.m */; };
 		00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C50210F0CDF00630EBC /* RemoveSectionController.m */; };
 		00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C54210F0D8C00630EBC /* RemoveCell.m */; };
 		002B6076210AAF830091C655 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6075210AAF830091C655 /* LabelSectionController.m */; };
 		002B6079210AFD620091C655 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6078210AFD620091C655 /* SearchViewController.m */; };
+		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
 		3179BDE67403D859A44A1C75 /* libPods-CCIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -44,8 +44,6 @@
 		001E26362109B888000C40B7 /* LabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelCell.m; sourceTree = "<group>"; };
 		001E26392109CD38000C40B7 /* LoadMoreViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadMoreViewController.h; sourceTree = "<group>"; };
 		001E263A2109CD38000C40B7 /* LoadMoreViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadMoreViewController.m; sourceTree = "<group>"; };
-		00220C4B210EEC8500630EBC /* EmptyViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = EmptyViewController.h; path = ../../../../Desktop/EmptyViewController.h; sourceTree = "<group>"; };
-		00220C4C210EEC8500630EBC /* EmptyViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = EmptyViewController.m; path = ../../../../Desktop/EmptyViewController.m; sourceTree = "<group>"; };
 		00220C4E210EEE1800630EBC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		00220C4F210F0CDF00630EBC /* RemoveSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RemoveSectionController.h; sourceTree = "<group>"; };
 		00220C50210F0CDF00630EBC /* RemoveSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RemoveSectionController.m; sourceTree = "<group>"; };
@@ -55,6 +53,8 @@
 		002B6075210AAF830091C655 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
 		002B6077210AFD620091C655 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		002B6078210AFD620091C655 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		0085E1B7211023790089568D /* EmptyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmptyViewController.h; sourceTree = "<group>"; };
+		0085E1B8211023790089568D /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		5A23DBB342ACCA14A1BF71BD /* Pods-CCIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		632D38CE209EC4054E0D4695 /* Pods-CCIGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCIGListKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -123,8 +123,8 @@
 				001E263A2109CD38000C40B7 /* LoadMoreViewController.m */,
 				002B6077210AFD620091C655 /* SearchViewController.h */,
 				002B6078210AFD620091C655 /* SearchViewController.m */,
-				00220C4B210EEC8500630EBC /* EmptyViewController.h */,
-				00220C4C210EEC8500630EBC /* EmptyViewController.m */,
+				0085E1B7211023790089568D /* EmptyViewController.h */,
+				0085E1B8211023790089568D /* EmptyViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -285,9 +285,9 @@
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
-				00220C4D210EEC8500630EBC /* EmptyViewController.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
+				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
