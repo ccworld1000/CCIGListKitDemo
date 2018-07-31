@@ -11,6 +11,7 @@
 
 @interface RemoveSectionController () {
     UIEdgeInsets inset;
+    NSNumber *number;
 }
 
 @end
@@ -21,6 +22,7 @@
     self = [super init];
     if (self) {
         inset = UIEdgeInsetsMake(0, 0, 10, 0);
+        number = @0;
     }
     
     return self;
@@ -32,9 +34,13 @@
 
 - (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
     RemoveCell *cell = [self.collectionContext dequeueReusableCellOfClass:[RemoveCell class] forSectionController:self atIndex:index];
-    cell.label.text = [NSString stringWithFormat:@"Cell: "];
+    cell.label.text = [NSString stringWithFormat:@"Cell: %ld", [number integerValue] + 1];
     
     return cell;
+}
+
+- (void)didUpdateToObject:(id)object {
+    number = object;
 }
 
 @end
