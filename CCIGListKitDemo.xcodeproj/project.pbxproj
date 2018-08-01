@@ -21,6 +21,9 @@
 		00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C54210F0D8C00630EBC /* RemoveCell.m */; };
 		002B6076210AAF830091C655 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6075210AAF830091C655 /* LabelSectionController.m */; };
 		002B6079210AFD620091C655 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6078210AFD620091C655 /* SearchViewController.m */; };
+		00342083211161B5009636A4 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00342082211161B5009636A4 /* Demo.storyboard */; };
+		0034208621116590009636A4 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034208521116590009636A4 /* StoryboardViewController.m */; };
+		00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */; };
 		007FA54B211066BC00D9F49A /* NibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA549211066BC00D9F49A /* NibCell.m */; };
 		007FA54C211066BC00D9F49A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007FA54A211066BC00D9F49A /* NibCell.xib */; };
 		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
@@ -56,6 +59,11 @@
 		002B6075210AAF830091C655 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
 		002B6077210AFD620091C655 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		002B6078210AFD620091C655 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		00342082211161B5009636A4 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
+		0034208421116590009636A4 /* StoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
+		0034208521116590009636A4 /* StoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
+		00342087211172D5009636A4 /* SingleSectionStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionStoryboardViewController.h; sourceTree = "<group>"; };
+		00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionStoryboardViewController.m; sourceTree = "<group>"; };
 		007FA548211066BC00D9F49A /* NibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
 		007FA549211066BC00D9F49A /* NibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
 		007FA54A211066BC00D9F49A /* NibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
@@ -101,6 +109,7 @@
 		001E26182109A817000C40B7 /* CCIGListKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				003420812111619B009636A4 /* Storyboard */,
 				00220C52210F0D6900630EBC /* Cells */,
 				002B6073210AAF620091C655 /* SectionControllers */,
 				001E26382109C9E9000C40B7 /* ViewControllers */,
@@ -135,6 +144,10 @@
 				0085E1B8211023790089568D /* EmptyViewController.m */,
 				0085E1BA211054860089568D /* SingleSectionViewController.h */,
 				0085E1BB211054860089568D /* SingleSectionViewController.m */,
+				0034208421116590009636A4 /* StoryboardViewController.h */,
+				0034208521116590009636A4 /* StoryboardViewController.m */,
+				00342087211172D5009636A4 /* SingleSectionStoryboardViewController.h */,
+				00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -160,6 +173,14 @@
 				00220C50210F0CDF00630EBC /* RemoveSectionController.m */,
 			);
 			path = SectionControllers;
+			sourceTree = "<group>";
+		};
+		003420812111619B009636A4 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				00342082211161B5009636A4 /* Demo.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 		1B22420AF73F000B335B7B76 /* Frameworks */ = {
@@ -240,6 +261,7 @@
 			files = (
 				001E26262109A818000C40B7 /* LaunchScreen.storyboard in Resources */,
 				007FA54C211066BC00D9F49A /* NibCell.xib in Resources */,
+				00342083211161B5009636A4 /* Demo.storyboard in Resources */,
 				001E26232109A818000C40B7 /* Assets.xcassets in Resources */,
 				001E26212109A817000C40B7 /* Main.storyboard in Resources */,
 			);
@@ -292,6 +314,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */,
+				00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */,
 				00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */,
 				001E261E2109A817000C40B7 /* ViewController.m in Sources */,
 				001E26342109B634000C40B7 /* DemoSectionController.m in Sources */,
@@ -303,6 +326,7 @@
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
+				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 			);

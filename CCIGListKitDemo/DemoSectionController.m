@@ -35,16 +35,24 @@
 
 - (void)didSelectItemAtIndex:(NSInteger)index {
     NSString *classString = self.item.controllerClass;
+    NSString *controllerIdentifier = self.item.controllerIdentifier;
     CCDebugPrint(classString);
     
-    UIViewController *vc = [NSClassFromString(classString) new];
-
+    UIViewController *vc = nil;
+    if (controllerIdentifier) {
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Demo" bundle: nil];
+        vc = [storyboard instantiateViewControllerWithIdentifier:controllerIdentifier];
+    } else {
+        vc = [NSClassFromString(classString) new];
+    }
+    
     if (vc) {
         vc.title = self.item.name;
         [self.viewController.navigationController pushViewController:vc animated: NO];
     } else {
         CCDebugWarningPrint([NSString stringWithFormat:@"%@ : [The interface may not be implemented] ", classString]);
     }
+
 }
 
 @end
