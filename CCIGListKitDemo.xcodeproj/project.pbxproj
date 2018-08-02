@@ -28,6 +28,7 @@
 		007FA54C211066BC00D9F49A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007FA54A211066BC00D9F49A /* NibCell.xib */; };
 		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
 		0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1BB211054860089568D /* SingleSectionViewController.m */; };
+		00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AD302112C3980069452E /* NestedAdapterViewController.m */; };
 		3179BDE67403D859A44A1C75 /* libPods-CCIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +72,8 @@
 		0085E1B8211023790089568D /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		0085E1BA211054860089568D /* SingleSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionViewController.h; sourceTree = "<group>"; };
 		0085E1BB211054860089568D /* SingleSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionViewController.m; sourceTree = "<group>"; };
+		00F7AD2F2112C3980069452E /* NestedAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedAdapterViewController.h; sourceTree = "<group>"; };
+		00F7AD302112C3980069452E /* NestedAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedAdapterViewController.m; sourceTree = "<group>"; };
 		5A23DBB342ACCA14A1BF71BD /* Pods-CCIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		632D38CE209EC4054E0D4695 /* Pods-CCIGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CCIGListKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -148,6 +151,8 @@
 				0034208521116590009636A4 /* StoryboardViewController.m */,
 				00342087211172D5009636A4 /* SingleSectionStoryboardViewController.h */,
 				00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */,
+				00F7AD2F2112C3980069452E /* NestedAdapterViewController.h */,
+				00F7AD302112C3980069452E /* NestedAdapterViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -320,6 +325,7 @@
 				001E26342109B634000C40B7 /* DemoSectionController.m in Sources */,
 				001E26372109B888000C40B7 /* LabelCell.m in Sources */,
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
+				00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
