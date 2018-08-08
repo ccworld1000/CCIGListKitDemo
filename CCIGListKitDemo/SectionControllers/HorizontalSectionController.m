@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) IGListAdapter *adapter;
 
-@property (nonatomic) NSInteger number;
+@property (nonatomic) NSNumber *number;
 
 @end
 
@@ -46,9 +46,10 @@
 
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    if (self.number) {
-        NSMutableArray *array = [NSMutableArray arrayWithCapacity: self.number];
-        for (int i = 0; i < self.number; i++) {
+    NSInteger number = [self.number integerValue];
+    if (number) {
+        NSMutableArray *array = [NSMutableArray arrayWithCapacity: number];
+        for (int i = 0; i < number; i++) {
             [array addObject:@(i)];
         }
         

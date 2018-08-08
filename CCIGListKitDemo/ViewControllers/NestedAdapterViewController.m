@@ -8,6 +8,7 @@
 
 #import "NestedAdapterViewController.h"
 #import "LabelSectionController.h"
+#import "HorizontalSectionController.h"
 
 @interface NestedAdapterViewController () <IGListAdapterDataSource>
 
@@ -36,10 +37,36 @@
     return _collectionView;
 }
 
+- (void) loadingData {
+//    _data = @[
+//              @"Ridiculus Elit Tellus Purus Aenean",
+//              @"Condimentum Sollicitudin Adipiscing",
+//              @14,
+//              @"Ligula Ipsum Tristique Parturient Euismod",
+//              @"Purus Dapibus Vulputate",
+//              @6,
+//              @"Tellus Nibh Ipsum Inceptos",
+//              @2
+//              ];
+    
+    _data = @[
+              [[DemoItem alloc] initWithName:@"Ridiculus Elit Tellus Purus Aenean"],
+              [[DemoItem alloc] initWithName:@"Condimentum Sollicitudin Adipiscing"],
+              @14,
+              [[DemoItem alloc] initWithName:@"Ligula Ipsum Tristique Parturient Euismod"],
+              [[DemoItem alloc] initWithName:@"Purus Dapibus Vulputate"],
+              @6,
+              [[DemoItem alloc] initWithName:@"Tellus Nibh Ipsum Inceptos"],
+              @2
+              ];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    [self loadingData];
+
     [self.view addSubview: self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
@@ -55,7 +82,12 @@
 }
 
 - (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    return [LabelSectionController new];
+    if ([object isKindOfClass:[NSNumber class]]) {
+        return [HorizontalSectionController new];
+    } else {
+        return [LabelSectionController new];
+    }
+    
 }
 
 
