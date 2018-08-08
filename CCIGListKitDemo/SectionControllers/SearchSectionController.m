@@ -7,6 +7,7 @@
 //
 
 #import "SearchSectionController.h"
+#import "SearchCell.h"
 
 @interface SearchSectionController () <UISearchBarDelegate, IGListScrollDelegate>
 
@@ -29,6 +30,17 @@
     return CGSizeMake(self.collectionContext.containerSize.width, 44);
 }
 
-
+- (UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
+    SearchCell *cell = [self.collectionContext dequeueReusableCellOfClass:[SearchCell class]
+                                                     forSectionController:self
+                                                                  atIndex:index];
+    
+    cell.searchBar.delegate = self;
+    
+//    UISearchBar *searchBar = cell.searchBar;
+//    [searchBar resignFirstResponder];
+    
+    return cell;
+}
 
 @end

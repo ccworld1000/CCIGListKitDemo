@@ -9,7 +9,7 @@
 #import "SingleSectionViewController.h"
 #import "NibCell.h"
 
-@interface SingleSectionViewController () <IGListAdapterDataSource>
+@interface SingleSectionViewController () <IGListAdapterDataSource, IGListSingleSectionControllerDelegate>
 
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) IGListAdapter *adapter;
@@ -83,11 +83,25 @@
         }
     };
     
-    return [[IGListSingleSectionController alloc] initWithNibName:@"NibCell" bundle: nil configureBlock:configureBlock sizeBlock:sizeBlock];
+    IGListSingleSectionController *sc = [[IGListSingleSectionController alloc] initWithNibName:@"NibCell" bundle: nil configureBlock:configureBlock sizeBlock:sizeBlock];
+    sc.selectionDelegate = self;
+    return sc;
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
 }
+
+
+- (void)didSelectSectionController:(IGListSingleSectionController *)sectionController withObject:(id)object {
+    NSInteger section = [self.adapter sectionForSectionController:sectionController];
+    
+    UIAlertController *a = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Section %ld was selected \u1F389", section]
+                                                               message:[NSString stringWithFormat: @"Cell Object: %@", object]
+                                                        preferredStyle:UIAlertControllerStyleAlert];
+    [a addAction:[UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler: nil]];
+    [self presentViewController:a animated:YES completion:nil];
+}
+
 
 @end

@@ -30,6 +30,7 @@
 		0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1BB211054860089568D /* SingleSectionViewController.m */; };
 		00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19085211A7E61009559BD /* CenterLabelCell.m */; };
 		00A19089211AA005009559BD /* SearchSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19088211AA005009559BD /* SearchSectionController.m */; };
+		00A1908C211AEB67009559BD /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A1908B211AEB67009559BD /* SearchCell.m */; };
 		00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B48270211402AB006A185C /* HorizontalSectionController.m */; };
 		00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827321142790006A185C /* EmbeddedSectionController.m */; };
 		00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */; };
@@ -81,6 +82,8 @@
 		00A19085211A7E61009559BD /* CenterLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterLabelCell.m; sourceTree = "<group>"; };
 		00A19087211AA005009559BD /* SearchSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSectionController.h; sourceTree = "<group>"; };
 		00A19088211AA005009559BD /* SearchSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchSectionController.m; sourceTree = "<group>"; };
+		00A1908A211AEB67009559BD /* SearchCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchCell.h; sourceTree = "<group>"; };
+		00A1908B211AEB67009559BD /* SearchCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchCell.m; sourceTree = "<group>"; };
 		00B4826F211402AB006A185C /* HorizontalSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HorizontalSectionController.h; sourceTree = "<group>"; };
 		00B48270211402AB006A185C /* HorizontalSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HorizontalSectionController.m; sourceTree = "<group>"; };
 		00B4827221142790006A185C /* EmbeddedSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedSectionController.h; sourceTree = "<group>"; };
@@ -184,6 +187,8 @@
 				00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */,
 				00A19084211A7E61009559BD /* CenterLabelCell.h */,
 				00A19085211A7E61009559BD /* CenterLabelCell.m */,
+				00A1908A211AEB67009559BD /* SearchCell.h */,
+				00A1908B211AEB67009559BD /* SearchCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -361,6 +366,7 @@
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
+				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
 				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,

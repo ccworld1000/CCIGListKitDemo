@@ -24,7 +24,7 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
-        _collectionView.backgroundColor = [CCColor whiteColor];
+        _collectionView.backgroundColor = [[CCColor whiteColor] colorWithAlphaComponent:0.9];
     }
     
     return _collectionView;

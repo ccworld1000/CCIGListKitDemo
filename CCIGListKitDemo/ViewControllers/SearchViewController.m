@@ -8,6 +8,7 @@
 
 #import "SearchViewController.h"
 #import "LabelSectionController.h"
+#import "SearchSectionController.h"
 
 @interface SearchViewController () <IGListAdapterDataSource>
 

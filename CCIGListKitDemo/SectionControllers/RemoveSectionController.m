@@ -10,7 +10,6 @@
 #import "RemoveCell.h"
 
 @interface RemoveSectionController () {
-    UIEdgeInsets inset;
     NSNumber *number;
 }
 
@@ -27,7 +26,7 @@
 - (instancetype) init {
     self = [super init];
     if (self) {
-        inset = UIEdgeInsetsMake(0, 0, 10, 0);
+        self.inset = UIEdgeInsetsMake(0, 0, 10, 0);
         number = @0;
     }
     
