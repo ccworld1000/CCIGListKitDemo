@@ -94,9 +94,9 @@
 
 
 - (void)didSelectSectionController:(IGListSingleSectionController *)sectionController withObject:(id)object {
-    NSInteger section = [self.adapter sectionForSectionController:sectionController];
+    NSInteger section = [self.adapter sectionForSectionController:sectionController] + 1;
     
-    UIAlertController *a = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Section %ld was selected \u1F389", section]
+    UIAlertController *a = [UIAlertController alertControllerWithTitle:[NSString stringWithFormat:@"Section %ld was selected 🎉", section]
                                                                message:[NSString stringWithFormat: @"Cell Object: %@", object]
                                                         preferredStyle:UIAlertControllerStyleAlert];
     [a addAction:[UIAlertAction actionWithTitle:@"Dismiss" style:UIAlertActionStyleDefault handler: nil]];
