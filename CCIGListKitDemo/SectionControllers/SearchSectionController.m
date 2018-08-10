@@ -11,8 +11,6 @@
 
 @interface SearchSectionController () <UISearchBarDelegate, IGListScrollDelegate>
 
-
-
 @end
 
 @implementation SearchSectionController
@@ -36,11 +34,34 @@
                                                                   atIndex:index];
     
     cell.searchBar.delegate = self;
-    
-//    UISearchBar *searchBar = cell.searchBar;
-//    [searchBar resignFirstResponder];
-    
+
     return cell;
 }
+
+- (void)searchBar:(UISearchBar *)searchBar textDidChange:(NSString *)searchText {
+    if ([_delegate respondsToSelector:@selector(searchSectionController:didChangeText:)]) {
+        [_delegate searchSectionController:self didChangeText:searchText];
+    }
+}
+
+- (void)searchBarTextDidEndEditing:(UISearchBar *)searchBar {
+    if ([_delegate respondsToSelector:@selector(searchSectionController:didChangeText:)]) {
+        [_delegate searchSectionController:self didChangeText:searchBar.text];
+    }
+}
+
+- (void)listAdapter:(IGListAdapter *)listAdapter didScrollSectionController:(IGListSectionController *)sectionController {
+    SearchCell *cell = [self.collectionContext cellForItemAtIndex:0 sectionController:sectionController];
+    if (cell) {
+        UISearchBar *searchBar = cell.searchBar;
+        if (searchBar) {
+            [searchBar resignFirstResponder];
+        }
+    }
+}
+
+- (void)listAdapter:(IGListAdapter *)listAdapter willBeginDraggingSectionController:(IGListSectionController *)sectionController {}
+- (void)listAdapter:(nonnull IGListAdapter *)listAdapter didEndDraggingSectionController:(nonnull IGListSectionController *)sectionController willDecelerate:(BOOL)decelerate {}
+
 
 @end

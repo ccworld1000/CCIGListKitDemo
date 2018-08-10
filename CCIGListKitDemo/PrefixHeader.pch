@@ -12,6 +12,7 @@
 #import <IGListKit.h>
 #import <CCDebug/CCDebug.h>
 #import <CCUtilities.h>
+#import <CCSugar/CCSugar.h>
 
 #import "DemoItem.h"
 
