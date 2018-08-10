@@ -28,6 +28,8 @@
 		007FA54C211066BC00D9F49A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007FA54A211066BC00D9F49A /* NibCell.xib */; };
 		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
 		0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1BB211054860089568D /* SingleSectionViewController.m */; };
+		00898882211D908A009DABDD /* DiffTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00898881211D908A009DABDD /* DiffTableViewController.m */; };
+		00898886211D9113009DABDD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 00898885211D9113009DABDD /* Person.m */; };
 		00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19085211A7E61009559BD /* CenterLabelCell.m */; };
 		00A19089211AA005009559BD /* SearchSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A19088211AA005009559BD /* SearchSectionController.m */; };
 		00A1908C211AEB67009559BD /* SearchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00A1908B211AEB67009559BD /* SearchCell.m */; };
@@ -78,6 +80,10 @@
 		0085E1B8211023790089568D /* EmptyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmptyViewController.m; sourceTree = "<group>"; };
 		0085E1BA211054860089568D /* SingleSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionViewController.h; sourceTree = "<group>"; };
 		0085E1BB211054860089568D /* SingleSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionViewController.m; sourceTree = "<group>"; };
+		00898880211D908A009DABDD /* DiffTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DiffTableViewController.h; sourceTree = "<group>"; };
+		00898881211D908A009DABDD /* DiffTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DiffTableViewController.m; sourceTree = "<group>"; };
+		00898884211D9113009DABDD /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		00898885211D9113009DABDD /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		00A19084211A7E61009559BD /* CenterLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CenterLabelCell.h; sourceTree = "<group>"; };
 		00A19085211A7E61009559BD /* CenterLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CenterLabelCell.m; sourceTree = "<group>"; };
 		00A19087211AA005009559BD /* SearchSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchSectionController.h; sourceTree = "<group>"; };
@@ -130,6 +136,7 @@
 		001E26182109A817000C40B7 /* CCIGListKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				00898883211D90F2009DABDD /* Item */,
 				003420812111619B009636A4 /* Storyboard */,
 				00220C52210F0D6900630EBC /* Cells */,
 				002B6073210AAF620091C655 /* SectionControllers */,
@@ -171,6 +178,8 @@
 				00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */,
 				00F7AD2F2112C3980069452E /* NestedAdapterViewController.h */,
 				00F7AD302112C3980069452E /* NestedAdapterViewController.m */,
+				00898880211D908A009DABDD /* DiffTableViewController.h */,
+				00898881211D908A009DABDD /* DiffTableViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -216,6 +225,15 @@
 				00342082211161B5009636A4 /* Demo.storyboard */,
 			);
 			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		00898883211D90F2009DABDD /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				00898884211D9113009DABDD /* Person.h */,
+				00898885211D9113009DABDD /* Person.m */,
+			);
+			path = Item;
 			sourceTree = "<group>";
 		};
 		1B22420AF73F000B335B7B76 /* Frameworks */ = {
@@ -360,6 +378,7 @@
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
+				00898886211D9113009DABDD /* Person.m in Sources */,
 				00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */,
 				00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
@@ -368,6 +387,7 @@
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
 				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
+				00898882211D908A009DABDD /* DiffTableViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 				00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */,
