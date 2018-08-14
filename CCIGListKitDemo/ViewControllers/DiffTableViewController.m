@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSArray *peopleForOld;
 @property (nonatomic, strong) NSArray *peopleForNew;
 @property (nonatomic, strong) NSArray *people;
+@property (nonatomic) BOOL usingOldPeople;
 
 @end
 
@@ -45,12 +46,31 @@
                           ];
     
     self.people = self.peopleForOld;
+    self.usingOldPeople = YES;
     
 }
 
 - (void) onDiff {
     CCDebugWarningPrint(@"onDiff");
-//    IGListDiffPaths(NSInteger fromSection, NSInteger toSection, <#NSArray<id<IGListDiffable>> * _Nullable oldArray#>, <#NSArray<id<IGListDiffable>> * _Nullable newArray#>, <#IGListDiffOption option#>)
+
+    NSInteger fromSection = 0;
+    NSInteger toSection = 0;
+    
+    NSArray *from = self.people;
+    NSArray *to = self.usingOldPeople ? self.peopleForNew : self.peopleForOld;
+    
+    _usingOldPeople = !_usingOldPeople;
+    
+    IGListIndexPathResult *result = [IGListDiffPaths(fromSection, toSection, from, to, IGListDiffEquality) resultForBatchUpdates];
+    [self.tableView beginUpdates];
+    [self.tableView deleteRowsAtIndexPaths:result.deletes withRowAnimation:UITableViewRowAnimationFade];
+    [self.tableView insertRowsAtIndexPaths:result.inserts withRowAnimation:UITableViewRowAnimationFade];
+    NSArray *moves = result.moves;
+    for (IGListMoveIndexPath * item in moves) {
+        [self.tableView moveRowAtIndexPath:item.from toIndexPath:item.to];
+    }
+    [self.tableView endUpdates];
+
 }
 
 - (void)viewDidLoad {
