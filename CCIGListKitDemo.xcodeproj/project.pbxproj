@@ -36,6 +36,8 @@
 		00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B48270211402AB006A185C /* HorizontalSectionController.m */; };
 		00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827321142790006A185C /* EmbeddedSectionController.m */; };
 		00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */; };
+		00EE40642123C54100566532 /* MixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40632123C54100566532 /* MixedDataViewController.m */; };
+		00EE40672123C6A600566532 /* GridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40662123C6A600566532 /* GridItem.m */; };
 		00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AD302112C3980069452E /* NestedAdapterViewController.m */; };
 		3179BDE67403D859A44A1C75 /* libPods-CCIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 76A7DC5D0E59C86F3D32860C /* libPods-CCIGListKitDemo.a */; };
 /* End PBXBuildFile section */
@@ -96,6 +98,10 @@
 		00B4827321142790006A185C /* EmbeddedSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedSectionController.m; sourceTree = "<group>"; };
 		00B4827521142ED8006A185C /* EmbeddedCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedCollectionViewCell.h; sourceTree = "<group>"; };
 		00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCollectionViewCell.m; sourceTree = "<group>"; };
+		00EE40622123C54100566532 /* MixedDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedDataViewController.h; sourceTree = "<group>"; };
+		00EE40632123C54100566532 /* MixedDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedDataViewController.m; sourceTree = "<group>"; };
+		00EE40652123C6A600566532 /* GridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridItem.h; sourceTree = "<group>"; };
+		00EE40662123C6A600566532 /* GridItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridItem.m; sourceTree = "<group>"; };
 		00F7AD2F2112C3980069452E /* NestedAdapterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NestedAdapterViewController.h; sourceTree = "<group>"; };
 		00F7AD302112C3980069452E /* NestedAdapterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NestedAdapterViewController.m; sourceTree = "<group>"; };
 		5A23DBB342ACCA14A1BF71BD /* Pods-CCIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CCIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -180,6 +186,8 @@
 				00F7AD302112C3980069452E /* NestedAdapterViewController.m */,
 				00898880211D908A009DABDD /* DiffTableViewController.h */,
 				00898881211D908A009DABDD /* DiffTableViewController.m */,
+				00EE40622123C54100566532 /* MixedDataViewController.h */,
+				00EE40632123C54100566532 /* MixedDataViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -232,6 +240,8 @@
 			children = (
 				00898884211D9113009DABDD /* Person.h */,
 				00898885211D9113009DABDD /* Person.m */,
+				00EE40652123C6A600566532 /* GridItem.h */,
+				00EE40662123C6A600566532 /* GridItem.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -386,6 +396,8 @@
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
+				00EE40672123C6A600566532 /* GridItem.m in Sources */,
+				00EE40642123C54100566532 /* MixedDataViewController.m in Sources */,
 				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
 				00898882211D908A009DABDD /* DiffTableViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
