@@ -27,7 +27,13 @@
     return self;
 }
 
+- (nonnull id<NSObject>)diffIdentifier {
+    return self;
+}
 
+- (BOOL)isEqualToDiffableObject:(nullable id<IGListDiffable>)object {
+    return ((self == object) || ([self isEqual:object]));
+}
 
 
 @end

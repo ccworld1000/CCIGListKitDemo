@@ -7,16 +7,23 @@
 //
 
 #import "MixedDataViewController.h"
+#import "ExpandableSectionController.h"
+#import "GridSectionController.h"
+#import "UserSectionController.h"
 #import "GridItem.h"
 #import "User.h"
 
-@interface MixedDataViewController ()
+@interface MixedDataViewController () <IGListAdapterDataSource>
 
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UISegmentedControl *control;
 @property (nonatomic, strong) NSArray *data;
-@property (nonatomic, strong) NSDictionary *segments;
+
+@property (nonatomic, strong) NSArray *segmentsTitles;
+@property (nonatomic, strong) NSArray *segmentsClasses;
+
+@property (nonatomic, strong) id selectedClass;
 
 @end
 
@@ -40,11 +47,38 @@
 
 - (UISegmentedControl *)control {
     if (!_control) {
-        _control = [[UISegmentedControl alloc] initWithItems:_segments.allKeys];
+        _control = [[UISegmentedControl alloc] initWithItems:self.segmentsTitles];
         _control.selectedSegmentIndex = 0;
+        [_control addTarget:self action:@selector(onControl:) forControlEvents:UIControlEventValueChanged];
     }
     
     return _control;
+}
+
+- (NSArray *)segmentsClasses {
+    if (!_segmentsClasses) {
+        _segmentsClasses = @[
+                            [NSNull class],
+                            [GridItem class],
+                            [NSString class],
+                            [User class],
+                            ];
+    }
+    
+    return _segmentsClasses;
+}
+
+- (NSArray *)segmentsTitles {
+    if (!_segmentsTitles) {
+        _segmentsTitles = @[
+                            @"All",
+                            @"Colors",
+                            @"Text",
+                            @"Users",
+                            ];
+    }
+    
+    return _segmentsTitles;
 }
 
 - (void) loadingData {
@@ -62,14 +96,19 @@
                   [[GridItem alloc] initWithColor:[CCColor colorWithRed:163 / 255.0 green:42 / 255.0 blue:186 / 255.0 alpha:1] itemCount:7],
                   [[User alloc] initWithPK:1 name:@"Ryan Nystrom" handle:@"_ryannystrom"]
                   ];
-    
-    self.segments = @{
-                  @"All" : [NSNull class],
-                  @"Colors" : [GridItem class],
-                  @"Text" : [NSString class],
-                  @"Users" : [User class],
-                  };
+}
 
+- (void) onControl : (UISegmentedControl *) control {
+    NSInteger index = control.selectedSegmentIndex;
+    
+    CCDebugPrint(self.segmentsTitles[index]);
+    
+    self.selectedClass = self.segmentsClasses[index];
+    [self.adapter performUpdatesAnimated:YES completion:nil];
+}
+
+- (void)viewDidLayoutSubviews {
+    self.collectionView.frame = self.view.bounds;
 }
 
 - (void)viewDidLoad {
@@ -79,6 +118,41 @@
     [self loadingData];
     
     self.navigationItem.titleView = self.control;
+    
+    [self.view addSubview:self.collectionView];
+    self.adapter.collectionView = self.collectionView;
+    self.adapter.dataSource = self;
+}
+
+- (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    if (!self.selectedClass || [self.selectedClass isKindOfClass:[NSNull class]]) {
+        return self.data;
+    }
+    
+    __block NSMutableArray *list = [NSMutableArray array];
+    [self.data each:^(id object) {
+        if ([object isKindOfClass:[self.selectedClass class]]) {
+            [list addObject:object];
+        }
+    }];
+    
+    return list;
+}
+
+- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+    if ([object isKindOfClass:[NSString class]]) {
+        return [ExpandableSectionController new];
+    }
+    
+    if ([object isKindOfClass:[GridItem class]]) {
+        return [UserSectionController new];
+    }
+    
+    return [UserSectionController new];
+}
+
+- (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
+    return nil;
 }
 
 

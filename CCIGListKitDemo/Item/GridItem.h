@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GridItem : NSObject
+@interface GridItem : NSObject <IGListDiffable>
 
 - (instancetype)initWithColor : (CCColor *) color itemCount: (NSInteger) count;
 

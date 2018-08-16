@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface User : NSObject
+@interface User : NSObject <IGListDiffable>
 
 - (instancetype)initWithPK: (NSInteger) pk name : (NSString *) name handle: (NSString *) handle;
 
