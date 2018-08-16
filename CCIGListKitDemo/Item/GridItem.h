@@ -10,4 +10,6 @@
 
 @interface GridItem : NSObject
 
+- (instancetype)initWithColor : (CCColor *) color itemCount: (NSInteger) count;
+
 @end

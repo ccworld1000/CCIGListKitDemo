@@ -8,6 +8,26 @@
 
 #import "GridItem.h"
 
+@interface GridItem()
+
+@property (nonatomic, strong) CCColor *color;
+@property (nonatomic) NSInteger itemCount;
+
+@end
+
 @implementation GridItem
+
+- (instancetype)initWithColor : (CCColor *) color itemCount: (NSInteger) count {
+    self = [super init];
+    if (self) {
+        self.color = color;
+        self.itemCount = count;
+    }
+    
+    return self;
+}
+
+
+
 
 @end

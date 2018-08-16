@@ -36,6 +36,7 @@
 		00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B48270211402AB006A185C /* HorizontalSectionController.m */; };
 		00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827321142790006A185C /* EmbeddedSectionController.m */; };
 		00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */; };
+		00CA805121253844004D85AB /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CA805021253844004D85AB /* User.m */; };
 		00EE40642123C54100566532 /* MixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40632123C54100566532 /* MixedDataViewController.m */; };
 		00EE40672123C6A600566532 /* GridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40662123C6A600566532 /* GridItem.m */; };
 		00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AD302112C3980069452E /* NestedAdapterViewController.m */; };
@@ -98,6 +99,8 @@
 		00B4827321142790006A185C /* EmbeddedSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedSectionController.m; sourceTree = "<group>"; };
 		00B4827521142ED8006A185C /* EmbeddedCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmbeddedCollectionViewCell.h; sourceTree = "<group>"; };
 		00B4827621142ED8006A185C /* EmbeddedCollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmbeddedCollectionViewCell.m; sourceTree = "<group>"; };
+		00CA804F21253844004D85AB /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		00CA805021253844004D85AB /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		00EE40622123C54100566532 /* MixedDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedDataViewController.h; sourceTree = "<group>"; };
 		00EE40632123C54100566532 /* MixedDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedDataViewController.m; sourceTree = "<group>"; };
 		00EE40652123C6A600566532 /* GridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridItem.h; sourceTree = "<group>"; };
@@ -242,6 +245,8 @@
 				00898885211D9113009DABDD /* Person.m */,
 				00EE40652123C6A600566532 /* GridItem.h */,
 				00EE40662123C6A600566532 /* GridItem.m */,
+				00CA804F21253844004D85AB /* User.h */,
+				00CA805021253844004D85AB /* User.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -384,6 +389,7 @@
 				001E26342109B634000C40B7 /* DemoSectionController.m in Sources */,
 				001E26372109B888000C40B7 /* LabelCell.m in Sources */,
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
+				00CA805121253844004D85AB /* User.m in Sources */,
 				00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
