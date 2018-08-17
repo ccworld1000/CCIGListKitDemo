@@ -13,12 +13,15 @@
 #import "GridItem.h"
 #import "User.h"
 
-@interface MixedDataViewController () <IGListAdapterDataSource>
+@interface MixedDataViewController () <IGListAdapterDataSource, IGListAdapterMoveDelegate>
 
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) UICollectionView *collectionView;
 @property (nonatomic, strong) UISegmentedControl *control;
 @property (nonatomic, strong) NSArray *data;
+@property (nonatomic, strong) NSArray *moveList;
+
+@property (nonatomic) BOOL isChnaged;
 
 @property (nonatomic, strong) NSArray *segmentsTitles;
 @property (nonatomic, strong) NSArray *segmentsClasses;
@@ -115,22 +118,16 @@
 }
 
 - (void) handleLongGesture : (UILongPressGestureRecognizer *)gesture {
-//    switch (gesture.state) {
-//        case UIGestureRecognizerStateBegan:
-//            CGPoint location = [gesture locationInView:self.collectionView];
-//            [self.collectionView indexPathForItemAtPoint:location];
-//            break;
-//
-//        default:
-//            break;
-//    }
-    
     UIGestureRecognizerState state = gesture.state;
     if (state == UIGestureRecognizerStateBegan) {
         CGPoint touchLocation = [gesture locationInView:self.collectionView];
         NSIndexPath *selectedIndexPath = [self.collectionView indexPathForItemAtPoint:touchLocation];
         if (selectedIndexPath) {
             [self.collectionView beginInteractiveMovementForItemAtIndexPath:selectedIndexPath];
+            
+            if (self.control.selectedSegmentIndex == 3) {
+                self.isChnaged = YES;
+            }
         }
     } else if (state == UIGestureRecognizerStateChanged) {
         UIView *view = gesture.view;
@@ -159,9 +156,14 @@
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
+    self.adapter.moveDelegate = self;
 }
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
+    if (self.isChnaged && self.control.selectedSegmentIndex == 3) {
+        return self.moveList;
+    }
+    
     if (!self.selectedClass || [[self.selectedClass class] isEqual:[NSNull class]]) {
         return self.data;
     }
@@ -185,12 +187,18 @@
         return [[GridSectionController alloc] init:YES];
     }
     
-    return [UserSectionController new];
+    return [[UserSectionController alloc] init:YES];
 }
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
 }
 
+- (void)listAdapter:(IGListAdapter *)listAdapter
+         moveObject:(id)object
+               from:(NSArray *)previousObjects
+                 to:(NSArray *)objects {
+    self.moveList = objects;
+}
 
 @end

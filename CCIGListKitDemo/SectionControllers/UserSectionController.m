@@ -13,10 +13,21 @@
 @interface UserSectionController ()
 
 @property (nonatomic, strong) User *user;
+@property (nonatomic) BOOL isReorderable;
 
 @end
 
 @implementation UserSectionController
+
+- (instancetype) init : (BOOL) isReorderable {
+    self = [super init];
+    
+    if (self) {
+        self.isReorderable = isReorderable;
+    }
+    
+    return self;
+}
 
 - (CGSize)sizeForItemAtIndex:(NSInteger)index {
     return CGSizeMake(self.collectionContext.containerSize.width, 55);
@@ -31,6 +42,10 @@
 
 - (void)didUpdateToObject:(id)object {
     self.user = object;
+}
+
+- (BOOL)canMoveItemAtIndex:(NSInteger)index {
+    return self.isReorderable;
 }
 
 @end

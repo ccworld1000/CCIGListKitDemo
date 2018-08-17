@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		000DCE07212674E0008A2D49 /* DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE06212674E0008A2D49 /* DetailLabelCell.m */; };
+		000DCE0A2126B08C008A2D49 /* StoryboardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE092126B08C008A2D49 /* StoryboardCell.m */; };
+		000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE0C2126B544008A2D49 /* StoryboardLabelSectionController.m */; };
+		000DCE102126C664008A2D49 /* WorkingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */; };
+		000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */; };
+		000DCE162126CFA9008A2D49 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE152126CFA9008A2D49 /* ImageCell.m */; };
 		001E261B2109A817000C40B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261A2109A817000C40B7 /* AppDelegate.m */; };
 		001E261E2109A817000C40B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261D2109A817000C40B7 /* ViewController.m */; };
 		001E26212109A817000C40B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001E261F2109A817000C40B7 /* Main.storyboard */; };
@@ -50,6 +55,16 @@
 /* Begin PBXFileReference section */
 		000DCE05212674E0008A2D49 /* DetailLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailLabelCell.h; sourceTree = "<group>"; };
 		000DCE06212674E0008A2D49 /* DetailLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailLabelCell.m; sourceTree = "<group>"; };
+		000DCE082126B08C008A2D49 /* StoryboardCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardCell.h; sourceTree = "<group>"; };
+		000DCE092126B08C008A2D49 /* StoryboardCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardCell.m; sourceTree = "<group>"; };
+		000DCE0B2126B544008A2D49 /* StoryboardLabelSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardLabelSectionController.h; sourceTree = "<group>"; };
+		000DCE0C2126B544008A2D49 /* StoryboardLabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardLabelSectionController.m; sourceTree = "<group>"; };
+		000DCE0E2126C664008A2D49 /* WorkingRangeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkingRangeViewController.h; sourceTree = "<group>"; };
+		000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkingRangeViewController.m; sourceTree = "<group>"; };
+		000DCE112126CC06008A2D49 /* WorkingRangeSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkingRangeSectionController.h; sourceTree = "<group>"; };
+		000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkingRangeSectionController.m; sourceTree = "<group>"; };
+		000DCE142126CFA9008A2D49 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		000DCE152126CFA9008A2D49 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
 		001E26162109A817000C40B7 /* CCIGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCIGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001E26192109A817000C40B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		001E261A2109A817000C40B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -203,6 +218,8 @@
 				00898881211D908A009DABDD /* DiffTableViewController.m */,
 				00EE40622123C54100566532 /* MixedDataViewController.h */,
 				00EE40632123C54100566532 /* MixedDataViewController.m */,
+				000DCE0E2126C664008A2D49 /* WorkingRangeViewController.h */,
+				000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -223,6 +240,10 @@
 				00A1908B211AEB67009559BD /* SearchCell.m */,
 				000DCE05212674E0008A2D49 /* DetailLabelCell.h */,
 				000DCE06212674E0008A2D49 /* DetailLabelCell.m */,
+				000DCE082126B08C008A2D49 /* StoryboardCell.h */,
+				000DCE092126B08C008A2D49 /* StoryboardCell.m */,
+				000DCE142126CFA9008A2D49 /* ImageCell.h */,
+				000DCE152126CFA9008A2D49 /* ImageCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -246,6 +267,10 @@
 				00CA80562125835E004D85AB /* GridSectionController.m */,
 				00CA805821258372004D85AB /* UserSectionController.h */,
 				00CA805921258372004D85AB /* UserSectionController.m */,
+				000DCE0B2126B544008A2D49 /* StoryboardLabelSectionController.h */,
+				000DCE0C2126B544008A2D49 /* StoryboardLabelSectionController.m */,
+				000DCE112126CC06008A2D49 /* WorkingRangeSectionController.h */,
+				000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -402,17 +427,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */,
+				000DCE0A2126B08C008A2D49 /* StoryboardCell.m in Sources */,
 				00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */,
 				00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */,
 				00A19089211AA005009559BD /* SearchSectionController.m in Sources */,
 				001E261E2109A817000C40B7 /* ViewController.m in Sources */,
 				00CA805421258332004D85AB /* ExpandableSectionController.m in Sources */,
 				00CA805A21258372004D85AB /* UserSectionController.m in Sources */,
+				000DCE102126C664008A2D49 /* WorkingRangeViewController.m in Sources */,
 				001E26342109B634000C40B7 /* DemoSectionController.m in Sources */,
 				001E26372109B888000C40B7 /* LabelCell.m in Sources */,
 				001E263B2109CD38000C40B7 /* LoadMoreViewController.m in Sources */,
 				00CA805121253844004D85AB /* User.m in Sources */,
 				00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */,
+				000DCE162126CFA9008A2D49 /* ImageCell.m in Sources */,
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
@@ -423,6 +451,8 @@
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
+				000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */,
+				000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
 				00EE40672123C6A600566532 /* GridItem.m in Sources */,
 				00EE40642123C54100566532 /* MixedDataViewController.m in Sources */,

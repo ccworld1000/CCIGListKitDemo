@@ -10,4 +10,6 @@
 
 @interface UserSectionController : IGListSectionController
 
+- (instancetype) init : (BOOL) isReorderable;
+
 @end

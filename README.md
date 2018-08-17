@@ -3,3 +3,4 @@
 ![CCIGListKitDemo](Document/CCIGListKitDemo.gif)
 ![CCIGListKitDemo MixedDataViewController](Document/MixedDataViewController.png)
 ![CCIGListKitDemo SearchViewController](Document/SearchViewController.png)
+![CCIGListKitDemo SingleSectionViewController](Document/SingleSectionViewController.png)
