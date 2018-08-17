@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000DCE07212674E0008A2D49 /* DetailLabelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE06212674E0008A2D49 /* DetailLabelCell.m */; };
 		001E261B2109A817000C40B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261A2109A817000C40B7 /* AppDelegate.m */; };
 		001E261E2109A817000C40B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261D2109A817000C40B7 /* ViewController.m */; };
 		001E26212109A817000C40B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001E261F2109A817000C40B7 /* Main.storyboard */; };
@@ -47,6 +48,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000DCE05212674E0008A2D49 /* DetailLabelCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailLabelCell.h; sourceTree = "<group>"; };
+		000DCE06212674E0008A2D49 /* DetailLabelCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailLabelCell.m; sourceTree = "<group>"; };
 		001E26162109A817000C40B7 /* CCIGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCIGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001E26192109A817000C40B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		001E261A2109A817000C40B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -218,6 +221,8 @@
 				00A19085211A7E61009559BD /* CenterLabelCell.m */,
 				00A1908A211AEB67009559BD /* SearchCell.h */,
 				00A1908B211AEB67009559BD /* SearchCell.m */,
+				000DCE05212674E0008A2D49 /* DetailLabelCell.h */,
+				000DCE06212674E0008A2D49 /* DetailLabelCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 				00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */,
 				00CA80572125835E004D85AB /* GridSectionController.m in Sources */,
+				000DCE07212674E0008A2D49 /* DetailLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

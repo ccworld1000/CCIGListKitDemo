@@ -12,4 +12,7 @@
 
 @property (nonatomic, strong) NSString * text;
 
++ (CGFloat) singleLineHeight;
++ (CGFloat) textHeight : (NSString *) text width: (CGFloat) width;
+
 @end

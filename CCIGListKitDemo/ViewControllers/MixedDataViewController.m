@@ -25,6 +25,8 @@
 
 @property (nonatomic, strong) id selectedClass;
 
+@property (nonatomic, strong) UILongPressGestureRecognizer *longPressGesture;
+
 @end
 
 @implementation MixedDataViewController
@@ -40,6 +42,7 @@
 - (UICollectionView *)collectionView {
     if (!_collectionView) {
         _collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:[UICollectionViewFlowLayout new]];
+        _collectionView.backgroundColor = [CCColor whiteColor];
     }
     
     return _collectionView;
@@ -111,6 +114,37 @@
     self.collectionView.frame = self.view.bounds;
 }
 
+- (void) handleLongGesture : (UILongPressGestureRecognizer *)gesture {
+//    switch (gesture.state) {
+//        case UIGestureRecognizerStateBegan:
+//            CGPoint location = [gesture locationInView:self.collectionView];
+//            [self.collectionView indexPathForItemAtPoint:location];
+//            break;
+//
+//        default:
+//            break;
+//    }
+    
+    UIGestureRecognizerState state = gesture.state;
+    if (state == UIGestureRecognizerStateBegan) {
+        CGPoint touchLocation = [gesture locationInView:self.collectionView];
+        NSIndexPath *selectedIndexPath = [self.collectionView indexPathForItemAtPoint:touchLocation];
+        if (selectedIndexPath) {
+            [self.collectionView beginInteractiveMovementForItemAtIndexPath:selectedIndexPath];
+        }
+    } else if (state == UIGestureRecognizerStateChanged) {
+        UIView *view = gesture.view;
+        if (view) {
+            CGPoint position = [gesture locationInView:view];
+            [self.collectionView updateInteractiveMovementTargetPosition:position];
+        }
+    } else if (state == UIGestureRecognizerStateEnded) {
+        [self.collectionView endInteractiveMovement];
+    } else {
+        [self.collectionView cancelInteractiveMovement];
+    }
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -119,13 +153,16 @@
     
     self.navigationItem.titleView = self.control;
     
+    self.longPressGesture = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(handleLongGesture:)];
+    [self.collectionView addGestureRecognizer:self.longPressGesture];
+    
     [self.view addSubview:self.collectionView];
     self.adapter.collectionView = self.collectionView;
     self.adapter.dataSource = self;
 }
 
 - (NSArray<id <IGListDiffable>> *)objectsForListAdapter:(IGListAdapter *)listAdapter {
-    if (!self.selectedClass || [self.selectedClass isKindOfClass:[NSNull class]]) {
+    if (!self.selectedClass || [[self.selectedClass class] isEqual:[NSNull class]]) {
         return self.data;
     }
     
@@ -145,7 +182,7 @@
     }
     
     if ([object isKindOfClass:[GridItem class]]) {
-        return [UserSectionController new];
+        return [[GridSectionController alloc] init:YES];
     }
     
     return [UserSectionController new];

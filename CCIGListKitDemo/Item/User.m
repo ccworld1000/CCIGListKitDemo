@@ -11,8 +11,6 @@
 @interface User()
 
 @property (nonatomic) NSInteger pk;
-@property (nonatomic, copy) NSString *name;
-@property (nonatomic, copy) NSString *handle;
 
 @end
 

@@ -10,4 +10,6 @@
 
 @interface GridSectionController : IGListSectionController
 
+- (instancetype) init : (BOOL) isReorderable;
+
 @end

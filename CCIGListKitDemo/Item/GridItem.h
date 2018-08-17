@@ -10,6 +10,10 @@
 
 @interface GridItem : NSObject <IGListDiffable>
 
+@property (nonatomic, strong) NSMutableArray *items;
+@property (nonatomic, strong) CCColor *color;
+@property (nonatomic) NSInteger itemCount;
+
 - (instancetype)initWithColor : (CCColor *) color itemCount: (NSInteger) count;
 
 @end

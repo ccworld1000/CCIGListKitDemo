@@ -7,7 +7,30 @@
 //
 
 #import "UserSectionController.h"
+#import "User.h"
+#import "DetailLabelCell.h"
+
+@interface UserSectionController ()
+
+@property (nonatomic, strong) User *user;
+
+@end
 
 @implementation UserSectionController
+
+- (CGSize)sizeForItemAtIndex:(NSInteger)index {
+    return CGSizeMake(self.collectionContext.containerSize.width, 55);
+}
+
+- (__kindof UICollectionViewCell *)cellForItemAtIndex:(NSInteger)index {
+    DetailLabelCell *cell = [self.collectionContext dequeueReusableCellOfClass:[DetailLabelCell class] forSectionController:self atIndex:index];
+    cell.titleLabel.text = self.user.name;
+    cell.detailLabel.text = [NSString stringWithFormat:@"@%@", self.user.handle];
+    return cell;
+}
+
+- (void)didUpdateToObject:(id)object {
+    self.user = object;
+}
 
 @end
