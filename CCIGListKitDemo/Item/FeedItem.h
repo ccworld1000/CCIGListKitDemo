@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
 
-@interface FeedItem : NSObject
+@interface FeedItem : NSObject <IGListDiffable>
+
+@property (nonatomic) NSInteger pk;
+@property (nonatomic, strong) User *user;
+@property (nonatomic, strong) NSArray *comments;
+
+- (instancetype)initWithPK: (NSInteger) pk user : (User *) user comments: (NSArray *) comments;
 
 @end

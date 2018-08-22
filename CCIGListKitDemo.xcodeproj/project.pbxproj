@@ -49,6 +49,10 @@
 		00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA1B212D0F090072EEB9 /* SupplementaryViewController.m */; };
 		00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA1E212D149A0072EEB9 /* FeedItem.m */; };
 		00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */; };
+		00E7EA26212D48970072EEB9 /* UserHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA24212D48970072EEB9 /* UserHeaderView.m */; };
+		00E7EA27212D48970072EEB9 /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E7EA25212D48970072EEB9 /* UserHeaderView.xib */; };
+		00E7EA2B212D4A1C0072EEB9 /* UserFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA29212D4A1C0072EEB9 /* UserFooterView.m */; };
+		00E7EA2C212D4A1C0072EEB9 /* UserFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 00E7EA2A212D4A1C0072EEB9 /* UserFooterView.xib */; };
 		00EE40642123C54100566532 /* MixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40632123C54100566532 /* MixedDataViewController.m */; };
 		00EE40672123C6A600566532 /* GridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40662123C6A600566532 /* GridItem.m */; };
 		00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AD302112C3980069452E /* NestedAdapterViewController.m */; };
@@ -137,6 +141,12 @@
 		00E7EA1E212D149A0072EEB9 /* FeedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
 		00E7EA20212D15060072EEB9 /* FeedItemSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItemSectionController.h; sourceTree = "<group>"; };
 		00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItemSectionController.m; sourceTree = "<group>"; };
+		00E7EA23212D48970072EEB9 /* UserHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserHeaderView.h; sourceTree = "<group>"; };
+		00E7EA24212D48970072EEB9 /* UserHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserHeaderView.m; sourceTree = "<group>"; };
+		00E7EA25212D48970072EEB9 /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
+		00E7EA28212D4A1C0072EEB9 /* UserFooterView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserFooterView.h; sourceTree = "<group>"; };
+		00E7EA29212D4A1C0072EEB9 /* UserFooterView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserFooterView.m; sourceTree = "<group>"; };
+		00E7EA2A212D4A1C0072EEB9 /* UserFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserFooterView.xib; sourceTree = "<group>"; };
 		00EE40622123C54100566532 /* MixedDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedDataViewController.h; sourceTree = "<group>"; };
 		00EE40632123C54100566532 /* MixedDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedDataViewController.m; sourceTree = "<group>"; };
 		00EE40652123C6A600566532 /* GridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridItem.h; sourceTree = "<group>"; };
@@ -255,6 +265,12 @@
 				000DCE092126B08C008A2D49 /* StoryboardCell.m */,
 				000DCE142126CFA9008A2D49 /* ImageCell.h */,
 				000DCE152126CFA9008A2D49 /* ImageCell.m */,
+				00E7EA23212D48970072EEB9 /* UserHeaderView.h */,
+				00E7EA24212D48970072EEB9 /* UserHeaderView.m */,
+				00E7EA25212D48970072EEB9 /* UserHeaderView.xib */,
+				00E7EA28212D4A1C0072EEB9 /* UserFooterView.h */,
+				00E7EA29212D4A1C0072EEB9 /* UserFooterView.m */,
+				00E7EA2A212D4A1C0072EEB9 /* UserFooterView.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -387,7 +403,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00E7EA27212D48970072EEB9 /* UserHeaderView.xib in Resources */,
 				001E26262109A818000C40B7 /* LaunchScreen.storyboard in Resources */,
+				00E7EA2C212D4A1C0072EEB9 /* UserFooterView.xib in Resources */,
 				007FA54C211066BC00D9F49A /* NibCell.xib in Resources */,
 				00342083211161B5009636A4 /* Demo.storyboard in Resources */,
 				001E26232109A818000C40B7 /* Assets.xcassets in Resources */,
@@ -442,6 +460,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				00220C51210F0CDF00630EBC /* RemoveSectionController.m in Sources */,
+				00E7EA26212D48970072EEB9 /* UserHeaderView.m in Sources */,
 				000DCE0A2126B08C008A2D49 /* StoryboardCell.m in Sources */,
 				00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */,
 				00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */,
@@ -480,6 +499,7 @@
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 				00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */,
 				00CA80572125835E004D85AB /* GridSectionController.m in Sources */,
+				00E7EA2B212D4A1C0072EEB9 /* UserFooterView.m in Sources */,
 				000DCE07212674E0008A2D49 /* DetailLabelCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

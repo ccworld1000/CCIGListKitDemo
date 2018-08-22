@@ -38,6 +38,19 @@
     return _adapter;
 }
 
+- (NSArray *)feedItems {
+    if (!_feedItems) {
+        _feedItems = @[
+                       [[FeedItem alloc] initWithPK: 1 user: [[User alloc] initWithPK:100 name:@"Jesse" handle:@"jesse_squires"] comments: @[@"You rock!", @"Hmm you sure about that?"]],
+                       [[FeedItem alloc] initWithPK: 2 user: [[User alloc] initWithPK:101 name:@"Ryan" handle:@"_ryannystrom"] comments: @[@"lgtm", @"lol", @"Let's try it!"]],
+                       [[FeedItem alloc] initWithPK: 3 user: [[User alloc] initWithPK:102 name:@"Ann" handle:@"abaum"] comments: @[@"Good luck!"]],
+                       [[FeedItem alloc] initWithPK: 4 user: [[User alloc] initWithPK:103 name:@"Phil" handle:@"phil"] comments: @[@"yoooooooo", @"What's the eta?"]]
+                       ];
+    }
+    
+    return _feedItems;
+}
+
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
     
