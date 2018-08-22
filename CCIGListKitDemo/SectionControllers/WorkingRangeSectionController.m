@@ -25,7 +25,7 @@
     CGFloat width = self.collectionContext.containerSize.width;
     
     if (width) {
-        _urlString = [NSString stringWithFormat:@"https://unsplash.it/%lf/%ld", width, self.height];
+        _urlString = [NSString stringWithFormat:@"https://unsplash.it/%ld/%ld", (NSInteger)width, self.height];
         CCDebugPrint(_urlString);
         return _urlString;
     }
@@ -79,7 +79,7 @@
 
 - (void)listAdapter:(IGListAdapter *)listAdapter sectionControllerWillEnterWorkingRange:(IGListSectionController *)sectionController {
     
-    if (self.downloadedImage == nil && self.task && self.urlString) {
+    if (self.downloadedImage == nil && self.task == nil && self.urlString) {
         NSURL *url = [NSURL URLWithString:self.urlString];
         NSString *msg = [NSString stringWithFormat:@"Downloading image %@ for section %ld", self.urlString, self.section];
         CCDebugPrint(msg);

@@ -46,6 +46,9 @@
 		00CA805421258332004D85AB /* ExpandableSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CA805321258332004D85AB /* ExpandableSectionController.m */; };
 		00CA80572125835E004D85AB /* GridSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CA80562125835E004D85AB /* GridSectionController.m */; };
 		00CA805A21258372004D85AB /* UserSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00CA805921258372004D85AB /* UserSectionController.m */; };
+		00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA1B212D0F090072EEB9 /* SupplementaryViewController.m */; };
+		00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA1E212D149A0072EEB9 /* FeedItem.m */; };
+		00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */; };
 		00EE40642123C54100566532 /* MixedDataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40632123C54100566532 /* MixedDataViewController.m */; };
 		00EE40672123C6A600566532 /* GridItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 00EE40662123C6A600566532 /* GridItem.m */; };
 		00F7AD312112C3980069452E /* NestedAdapterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00F7AD302112C3980069452E /* NestedAdapterViewController.m */; };
@@ -128,6 +131,12 @@
 		00CA80562125835E004D85AB /* GridSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GridSectionController.m; sourceTree = "<group>"; };
 		00CA805821258372004D85AB /* UserSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserSectionController.h; sourceTree = "<group>"; };
 		00CA805921258372004D85AB /* UserSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserSectionController.m; sourceTree = "<group>"; };
+		00E7EA1A212D0F090072EEB9 /* SupplementaryViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SupplementaryViewController.h; sourceTree = "<group>"; };
+		00E7EA1B212D0F090072EEB9 /* SupplementaryViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SupplementaryViewController.m; sourceTree = "<group>"; };
+		00E7EA1D212D149A0072EEB9 /* FeedItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItem.h; sourceTree = "<group>"; };
+		00E7EA1E212D149A0072EEB9 /* FeedItem.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItem.m; sourceTree = "<group>"; };
+		00E7EA20212D15060072EEB9 /* FeedItemSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedItemSectionController.h; sourceTree = "<group>"; };
+		00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedItemSectionController.m; sourceTree = "<group>"; };
 		00EE40622123C54100566532 /* MixedDataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MixedDataViewController.h; sourceTree = "<group>"; };
 		00EE40632123C54100566532 /* MixedDataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MixedDataViewController.m; sourceTree = "<group>"; };
 		00EE40652123C6A600566532 /* GridItem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GridItem.h; sourceTree = "<group>"; };
@@ -220,6 +229,8 @@
 				00EE40632123C54100566532 /* MixedDataViewController.m */,
 				000DCE0E2126C664008A2D49 /* WorkingRangeViewController.h */,
 				000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */,
+				00E7EA1A212D0F090072EEB9 /* SupplementaryViewController.h */,
+				00E7EA1B212D0F090072EEB9 /* SupplementaryViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +282,8 @@
 				000DCE0C2126B544008A2D49 /* StoryboardLabelSectionController.m */,
 				000DCE112126CC06008A2D49 /* WorkingRangeSectionController.h */,
 				000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */,
+				00E7EA20212D15060072EEB9 /* FeedItemSectionController.h */,
+				00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -292,6 +305,8 @@
 				00EE40662123C6A600566532 /* GridItem.m */,
 				00CA804F21253844004D85AB /* User.h */,
 				00CA805021253844004D85AB /* User.m */,
+				00E7EA1D212D149A0072EEB9 /* FeedItem.h */,
+				00E7EA1E212D149A0072EEB9 /* FeedItem.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -444,6 +459,7 @@
 				002B6079210AFD620091C655 /* SearchViewController.m in Sources */,
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
+				00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */,
 				00898886211D9113009DABDD /* Person.m in Sources */,
 				00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */,
 				00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */,
@@ -451,7 +467,9 @@
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
+				00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */,
 				000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */,
+				00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */,
 				000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
 				00EE40672123C6A600566532 /* GridItem.m in Sources */,
