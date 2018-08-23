@@ -8,6 +8,17 @@
 
 #import <Foundation/Foundation.h>
 
-@interface SelectionModel : NSObject
+typedef NS_ENUM(NSInteger, SelectionModelType) {
+    SelectionModelTypeNone,
+    SelectionModelTypeFullWidth,
+    SelectionModelTypeNib,
+};
+
+@interface SelectionModel : NSObject <IGListDiffable>
+
+@property (nonatomic, strong) NSArray *options;
+@property (nonatomic) SelectionModelType type;
+
+- (instancetype)initWithOptions: (NSArray *)options type: (SelectionModelType) type;
 
 @end

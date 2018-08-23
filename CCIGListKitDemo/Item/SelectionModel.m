@@ -10,4 +10,21 @@
 
 @implementation SelectionModel
 
+- (instancetype)initWithOptions: (NSArray *)options type: (SelectionModelType) type {
+    self = [super init];
+    if (self) {
+        self.options = options;
+        self.type = type;
+    }
+    return self;
+}
+
+- (nonnull id<NSObject>)diffIdentifier {
+    return self;
+}
+
+- (BOOL)isEqualToDiffableObject:(nullable id<IGListDiffable>)object {
+    return [self isEqual:object];
+}
+
 @end
