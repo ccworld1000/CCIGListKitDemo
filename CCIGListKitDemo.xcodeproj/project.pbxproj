@@ -30,6 +30,9 @@
 		00342083211161B5009636A4 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00342082211161B5009636A4 /* Demo.storyboard */; };
 		0034208621116590009636A4 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034208521116590009636A4 /* StoryboardViewController.m */; };
 		00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */; };
+		0067C7A8212E72D500D352F9 /* SelfSizingCellsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0067C7A7212E72D500D352F9 /* SelfSizingCellsViewController.m */; };
+		0067C7AB212E732600D352F9 /* SelectionModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0067C7AA212E732600D352F9 /* SelectionModel.m */; };
+		0067C7AE212E74E000D352F9 /* SelfSizingSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0067C7AD212E74E000D352F9 /* SelfSizingSectionController.m */; };
 		007FA54B211066BC00D9F49A /* NibCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 007FA549211066BC00D9F49A /* NibCell.m */; };
 		007FA54C211066BC00D9F49A /* NibCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 007FA54A211066BC00D9F49A /* NibCell.xib */; };
 		0085E1B9211023790089568D /* EmptyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085E1B8211023790089568D /* EmptyViewController.m */; };
@@ -104,6 +107,12 @@
 		0034208521116590009636A4 /* StoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
 		00342087211172D5009636A4 /* SingleSectionStoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SingleSectionStoryboardViewController.h; sourceTree = "<group>"; };
 		00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SingleSectionStoryboardViewController.m; sourceTree = "<group>"; };
+		0067C7A6212E72D500D352F9 /* SelfSizingCellsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSizingCellsViewController.h; sourceTree = "<group>"; };
+		0067C7A7212E72D500D352F9 /* SelfSizingCellsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSizingCellsViewController.m; sourceTree = "<group>"; };
+		0067C7A9212E732600D352F9 /* SelectionModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelectionModel.h; sourceTree = "<group>"; };
+		0067C7AA212E732600D352F9 /* SelectionModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelectionModel.m; sourceTree = "<group>"; };
+		0067C7AC212E74E000D352F9 /* SelfSizingSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SelfSizingSectionController.h; sourceTree = "<group>"; };
+		0067C7AD212E74E000D352F9 /* SelfSizingSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SelfSizingSectionController.m; sourceTree = "<group>"; };
 		007FA548211066BC00D9F49A /* NibCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NibCell.h; sourceTree = "<group>"; };
 		007FA549211066BC00D9F49A /* NibCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NibCell.m; sourceTree = "<group>"; };
 		007FA54A211066BC00D9F49A /* NibCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NibCell.xib; sourceTree = "<group>"; };
@@ -241,6 +250,8 @@
 				000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */,
 				00E7EA1A212D0F090072EEB9 /* SupplementaryViewController.h */,
 				00E7EA1B212D0F090072EEB9 /* SupplementaryViewController.m */,
+				0067C7A6212E72D500D352F9 /* SelfSizingCellsViewController.h */,
+				0067C7A7212E72D500D352F9 /* SelfSizingCellsViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -300,6 +311,8 @@
 				000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */,
 				00E7EA20212D15060072EEB9 /* FeedItemSectionController.h */,
 				00E7EA21212D15060072EEB9 /* FeedItemSectionController.m */,
+				0067C7AC212E74E000D352F9 /* SelfSizingSectionController.h */,
+				0067C7AD212E74E000D352F9 /* SelfSizingSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -323,6 +336,8 @@
 				00CA805021253844004D85AB /* User.m */,
 				00E7EA1D212D149A0072EEB9 /* FeedItem.h */,
 				00E7EA1E212D149A0072EEB9 /* FeedItem.m */,
+				0067C7A9212E732600D352F9 /* SelectionModel.h */,
+				0067C7AA212E732600D352F9 /* SelectionModel.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -479,15 +494,18 @@
 				0085E1BC211054860089568D /* SingleSectionViewController.m in Sources */,
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
 				00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */,
+				0067C7A8212E72D500D352F9 /* SelfSizingCellsViewController.m in Sources */,
 				00898886211D9113009DABDD /* Person.m in Sources */,
 				00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */,
 				00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
+				0067C7AE212E74E000D352F9 /* SelfSizingSectionController.m in Sources */,
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */,
 				000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */,
+				0067C7AB212E732600D352F9 /* SelectionModel.m in Sources */,
 				00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */,
 				000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
