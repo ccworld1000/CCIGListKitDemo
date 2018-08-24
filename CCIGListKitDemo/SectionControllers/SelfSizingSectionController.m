@@ -54,6 +54,7 @@
         case SelectionModelTypeFullWidth:
         {
             FullWidthSelfSizingCell *manualCell = [self.collectionContext dequeueReusableCellOfClass:[FullWidthSelfSizingCell class] forSectionController:self atIndex:index];
+            manualCell.label.text = text;
             cell = manualCell;
         }
             break;

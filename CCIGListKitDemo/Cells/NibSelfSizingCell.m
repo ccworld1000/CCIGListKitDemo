@@ -13,6 +13,8 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     // Initialization code
+    
+    self.contentLabel.backgroundColor = [[CCColor grayColor] colorWithAlphaComponent:0.1];
 }
 
 @end
