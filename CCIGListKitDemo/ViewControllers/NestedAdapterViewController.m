@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) IGListAdapter *adapter;
 @property (nonatomic, strong) UICollectionView *collectionView;
-@property (nonatomic, strong) NSMutableArray *data;
+@property (nonatomic, strong) NSArray *data;
 
 @end
 
@@ -38,17 +38,6 @@
 }
 
 - (void) loadingData {
-//    _data = @[
-//              @"Ridiculus Elit Tellus Purus Aenean",
-//              @"Condimentum Sollicitudin Adipiscing",
-//              @14,
-//              @"Ligula Ipsum Tristique Parturient Euismod",
-//              @"Purus Dapibus Vulputate",
-//              @6,
-//              @"Tellus Nibh Ipsum Inceptos",
-//              @2
-//              ];
-    
     _data = @[
               [[DemoItem alloc] initWithName:@"Ridiculus Elit Tellus Purus Aenean"],
               [[DemoItem alloc] initWithName:@"Condimentum Sollicitudin Adipiscing"],

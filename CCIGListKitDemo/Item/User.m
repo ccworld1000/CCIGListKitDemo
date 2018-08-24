@@ -30,13 +30,6 @@
     return @(self.pk);
 }
 
-/**
- Returns whether the receiver and a given object are equal.
- 
- @param object The object to be compared to the receiver.
- 
- @return `YES` if the receiver and object are equal, otherwise `NO`.
- */
 - (BOOL)isEqualToDiffableObject:(nullable id<IGListDiffable>)object {
     BOOL res = NO;
     if (self == object) {

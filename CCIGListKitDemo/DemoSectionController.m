@@ -52,7 +52,6 @@
     } else {
         CCDebugWarningPrint([NSString stringWithFormat:@"%@ : [The interface may not be implemented] ", classString]);
     }
-
 }
 
 @end

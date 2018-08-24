@@ -25,7 +25,7 @@
 }
 
 - (BOOL)isEqualToDiffableObject:(nullable id<IGListDiffable>)object {
-    Person *person = object;
+    Person *person = (Person *)object;
     if ([person isKindOfClass : [Person class]]) {
         return self.name == person.name;
     } else {
