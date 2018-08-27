@@ -13,6 +13,7 @@
 		000DCE102126C664008A2D49 /* WorkingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */; };
 		000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */; };
 		000DCE162126CFA9008A2D49 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE152126CFA9008A2D49 /* ImageCell.m */; };
+		001DD4002133EEF600E8EE44 /* StackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001DD3FF2133EEF600E8EE44 /* StackedViewController.m */; };
 		001E261B2109A817000C40B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261A2109A817000C40B7 /* AppDelegate.m */; };
 		001E261E2109A817000C40B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261D2109A817000C40B7 /* ViewController.m */; };
 		001E26212109A817000C40B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 001E261F2109A817000C40B7 /* Main.storyboard */; };
@@ -81,6 +82,8 @@
 		000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkingRangeSectionController.m; sourceTree = "<group>"; };
 		000DCE142126CFA9008A2D49 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		000DCE152126CFA9008A2D49 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		001DD3FE2133EEF600E8EE44 /* StackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackedViewController.h; sourceTree = "<group>"; };
+		001DD3FF2133EEF600E8EE44 /* StackedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackedViewController.m; sourceTree = "<group>"; };
 		001E26162109A817000C40B7 /* CCIGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCIGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		001E26192109A817000C40B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		001E261A2109A817000C40B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -271,6 +274,8 @@
 				0067C7A7212E72D500D352F9 /* SelfSizingCellsViewController.m */,
 				006E9C2F212FAE6300FA39B9 /* DisplayViewController.h */,
 				006E9C30212FAE6300FA39B9 /* DisplayViewController.m */,
+				001DD3FE2133EEF600E8EE44 /* StackedViewController.h */,
+				001DD3FF2133EEF600E8EE44 /* StackedViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -508,6 +513,7 @@
 				000DCE0A2126B08C008A2D49 /* StoryboardCell.m in Sources */,
 				00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */,
 				00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */,
+				001DD4002133EEF600E8EE44 /* StackedViewController.m in Sources */,
 				0067C7B4212EA81400D352F9 /* FullWidthSelfSizingCell.m in Sources */,
 				00A19089211AA005009559BD /* SearchSectionController.m in Sources */,
 				001E261E2109A817000C40B7 /* ViewController.m in Sources */,
