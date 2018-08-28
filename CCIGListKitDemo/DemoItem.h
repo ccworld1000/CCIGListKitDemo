@@ -18,4 +18,7 @@
 - (instancetype) initWithName : (NSString *)name controllerClass: (NSString *) controllerClass;
 - (instancetype) initWithName : (NSString *)name controllerClass: (NSString *) controllerClass controllerIdentifier : (NSString *) controllerIdentifier;
 
+- (instancetype) init NS_UNAVAILABLE;
++ (instancetype) new NS_UNAVAILABLE;
+
 @end
