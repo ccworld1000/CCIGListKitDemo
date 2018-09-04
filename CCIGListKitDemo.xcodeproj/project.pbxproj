@@ -28,6 +28,13 @@
 		00220C55210F0D8C00630EBC /* RemoveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00220C54210F0D8C00630EBC /* RemoveCell.m */; };
 		002B6076210AAF830091C655 /* LabelSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6075210AAF830091C655 /* LabelSectionController.m */; };
 		002B6079210AFD620091C655 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002B6078210AFD620091C655 /* SearchViewController.m */; };
+		002EF40A213E864D007BF477 /* ObjcDemoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF409213E864D007BF477 /* ObjcDemoViewController.m */; };
+		002EF40D213E873D007BF477 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF40C213E873D007BF477 /* Post.m */; };
+		002EF410213E89CB007BF477 /* PostSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF40F213E89CB007BF477 /* PostSectionController.m */; };
+		002EF413213E8B99007BF477 /* UserInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF412213E8B99007BF477 /* UserInfoCell.m */; };
+		002EF416213E8BA9007BF477 /* PhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF415213E8BA9007BF477 /* PhotoCell.m */; };
+		002EF419213E8BB7007BF477 /* InteractiveCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF418213E8BB7007BF477 /* InteractiveCell.m */; };
+		002EF41C213E8BC4007BF477 /* CommentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF41B213E8BC4007BF477 /* CommentCell.m */; };
 		00342083211161B5009636A4 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00342082211161B5009636A4 /* Demo.storyboard */; };
 		0034208621116590009636A4 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034208521116590009636A4 /* StoryboardViewController.m */; };
 		00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */; };
@@ -111,6 +118,20 @@
 		002B6075210AAF830091C655 /* LabelSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LabelSectionController.m; sourceTree = "<group>"; };
 		002B6077210AFD620091C655 /* SearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		002B6078210AFD620091C655 /* SearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
+		002EF408213E864D007BF477 /* ObjcDemoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjcDemoViewController.h; sourceTree = "<group>"; };
+		002EF409213E864D007BF477 /* ObjcDemoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjcDemoViewController.m; sourceTree = "<group>"; };
+		002EF40B213E873D007BF477 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		002EF40C213E873D007BF477 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
+		002EF40E213E89CB007BF477 /* PostSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostSectionController.h; sourceTree = "<group>"; };
+		002EF40F213E89CB007BF477 /* PostSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostSectionController.m; sourceTree = "<group>"; };
+		002EF411213E8B99007BF477 /* UserInfoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoCell.h; sourceTree = "<group>"; };
+		002EF412213E8B99007BF477 /* UserInfoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoCell.m; sourceTree = "<group>"; };
+		002EF414213E8BA9007BF477 /* PhotoCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoCell.h; sourceTree = "<group>"; };
+		002EF415213E8BA9007BF477 /* PhotoCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoCell.m; sourceTree = "<group>"; };
+		002EF417213E8BB7007BF477 /* InteractiveCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveCell.h; sourceTree = "<group>"; };
+		002EF418213E8BB7007BF477 /* InteractiveCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveCell.m; sourceTree = "<group>"; };
+		002EF41A213E8BC4007BF477 /* CommentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommentCell.h; sourceTree = "<group>"; };
+		002EF41B213E8BC4007BF477 /* CommentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommentCell.m; sourceTree = "<group>"; };
 		00342082211161B5009636A4 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		0034208421116590009636A4 /* StoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
 		0034208521116590009636A4 /* StoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
@@ -276,6 +297,8 @@
 				006E9C30212FAE6300FA39B9 /* DisplayViewController.m */,
 				001DD3FE2133EEF600E8EE44 /* StackedViewController.h */,
 				001DD3FF2133EEF600E8EE44 /* StackedViewController.m */,
+				002EF408213E864D007BF477 /* ObjcDemoViewController.h */,
+				002EF409213E864D007BF477 /* ObjcDemoViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -313,6 +336,14 @@
 				0067C7B5212EA86C00D352F9 /* NibSelfSizingCell.h */,
 				0067C7B6212EA86C00D352F9 /* NibSelfSizingCell.m */,
 				0067C7B7212EA86C00D352F9 /* NibSelfSizingCell.xib */,
+				002EF411213E8B99007BF477 /* UserInfoCell.h */,
+				002EF412213E8B99007BF477 /* UserInfoCell.m */,
+				002EF414213E8BA9007BF477 /* PhotoCell.h */,
+				002EF415213E8BA9007BF477 /* PhotoCell.m */,
+				002EF417213E8BB7007BF477 /* InteractiveCell.h */,
+				002EF418213E8BB7007BF477 /* InteractiveCell.m */,
+				002EF41A213E8BC4007BF477 /* CommentCell.h */,
+				002EF41B213E8BC4007BF477 /* CommentCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -346,6 +377,8 @@
 				0067C7AD212E74E000D352F9 /* SelfSizingSectionController.m */,
 				006E9C32212FD5D600FA39B9 /* DisplaySectionController.h */,
 				006E9C33212FD5D600FA39B9 /* DisplaySectionController.m */,
+				002EF40E213E89CB007BF477 /* PostSectionController.h */,
+				002EF40F213E89CB007BF477 /* PostSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -371,6 +404,8 @@
 				00E7EA1E212D149A0072EEB9 /* FeedItem.m */,
 				0067C7A9212E732600D352F9 /* SelectionModel.h */,
 				0067C7AA212E732600D352F9 /* SelectionModel.m */,
+				002EF40B213E873D007BF477 /* Post.h */,
+				002EF40C213E873D007BF477 /* Post.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -532,27 +567,34 @@
 				002B6076210AAF830091C655 /* LabelSectionController.m in Sources */,
 				0067C7B8212EA86C00D352F9 /* NibSelfSizingCell.m in Sources */,
 				00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */,
+				002EF416213E8BA9007BF477 /* PhotoCell.m in Sources */,
 				0067C7A8212E72D500D352F9 /* SelfSizingCellsViewController.m in Sources */,
 				00898886211D9113009DABDD /* Person.m in Sources */,
 				00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */,
+				002EF410213E89CB007BF477 /* PostSectionController.m in Sources */,
+				002EF413213E8B99007BF477 /* UserInfoCell.m in Sources */,
 				00B4827721142ED8006A185C /* EmbeddedCollectionViewCell.m in Sources */,
 				001E26312109AD2D000C40B7 /* DemoItem.m in Sources */,
 				001E26292109A818000C40B7 /* main.m in Sources */,
 				0067C7AE212E74E000D352F9 /* SelfSizingSectionController.m in Sources */,
 				00B4827421142790006A185C /* EmbeddedSectionController.m in Sources */,
+				002EF41C213E8BC4007BF477 /* CommentCell.m in Sources */,
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */,
 				000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */,
 				006E9C34212FD5D600FA39B9 /* DisplaySectionController.m in Sources */,
+				002EF419213E8BB7007BF477 /* InteractiveCell.m in Sources */,
 				0067C7AB212E732600D352F9 /* SelectionModel.m in Sources */,
 				00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */,
 				000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
 				00EE40672123C6A600566532 /* GridItem.m in Sources */,
+				002EF40A213E864D007BF477 /* ObjcDemoViewController.m in Sources */,
 				00EE40642123C54100566532 /* MixedDataViewController.m in Sources */,
 				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
 				00898882211D908A009DABDD /* DiffTableViewController.m in Sources */,
 				001E261B2109A817000C40B7 /* AppDelegate.m in Sources */,
+				002EF40D213E873D007BF477 /* Post.m in Sources */,
 				007FA54B211066BC00D9F49A /* NibCell.m in Sources */,
 				00A19086211A7E61009559BD /* CenterLabelCell.m in Sources */,
 				00CA80572125835E004D85AB /* GridSectionController.m in Sources */,

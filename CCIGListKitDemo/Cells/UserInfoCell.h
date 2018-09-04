@@ -1,0 +1,15 @@
+//
+//  UserInfoCell.h
+//  CCIGListKitDemo
+//
+//  Created by dengyouhua on 2018/9/4 - now.
+//  Copyright © 2018 cc | ccworld1000@gmail.com. All rights reserved.
+//  https://github.com/ccworld1000/CCIGListKitDemo
+
+#import <UIKit/UIKit.h>
+
+@interface UserInfoCell : UICollectionViewCell
+
+@property (nonatomic, strong) UILabel *nameLabel;
+
+@end
