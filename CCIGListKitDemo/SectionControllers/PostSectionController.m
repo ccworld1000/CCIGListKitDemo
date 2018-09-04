@@ -70,7 +70,8 @@ static NSInteger cellsBeforeComments = 3;
     UICollectionViewCell *cell = [self.collectionContext dequeueReusableCellOfClass:cellClass forSectionController:self atIndex:index];
     
     if ([cell isKindOfClass:[CommentCell class]]) {
-        ;
+        CommentCell *cCell = (CommentCell *) cell;
+        cCell.commentLabel.text = self.post.comments[index - cellsBeforeComments];
     } else if ([cell isKindOfClass:[UserInfoCell class]]) {
         UserInfoCell *uCell = (UserInfoCell *)cell;
         uCell.nameLabel.text = self.post.username;

@@ -10,4 +10,6 @@
 
 @interface CommentCell : UICollectionViewCell
 
+@property (nonatomic, strong) UILabel *commentLabel;
+
 @end
