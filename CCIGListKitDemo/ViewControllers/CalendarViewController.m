@@ -8,6 +8,7 @@
 
 #import "CalendarViewController.h"
 #import "MonthSectionController.h"
+#import "Month.h"
 
 @interface CalendarViewController () <IGListAdapterDataSource>
 
@@ -18,6 +19,31 @@
 @end
 
 @implementation CalendarViewController
+
+- (NSArray *)months {
+    if (!_months) {
+        NSDate *date = [NSDate new];
+        NSInteger currentMonth = [NSCalendar.currentCalendar component:NSCalendarUnitMonth fromDate:date];
+        NSDateFormatter *dateFormatter = [NSDateFormatter new];
+        NSArray *appointments = @[
+                                  @{@2: @[@"Hair"]},
+                                  @{@4: @[@"Nails"]},
+                                  @{@7: @[@"Doctor appt", @"Pick up groceries"]},
+                                  @{@12: @[@"Call back the cable company", @"Find a babysitter"]},
+                                  @{@13: @[@"Dinner at The Smith"]},
+                                  @{@17: @[@"Buy running shoes", @"Buy a fitbit", @"Start running"]},
+                                  @{@20: @[@"Call mom"]},
+                                  @{@21: @[@"Contribute to IGListKit"]},
+                                  @{@25: @[@"Interview"]},
+                                  @{@26: @[@"Quit running", @"Buy ice cream"]}
+                                  ];
+
+        Month *m = [[Month alloc] initWithName:dateFormatter.monthSymbols[currentMonth - 1] days:30 appointments:appointments];
+        _months = @[m];
+    }
+    
+    return _months;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
