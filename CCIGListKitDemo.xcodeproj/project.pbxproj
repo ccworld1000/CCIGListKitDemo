@@ -13,6 +13,11 @@
 		000DCE102126C664008A2D49 /* WorkingRangeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE0F2126C664008A2D49 /* WorkingRangeViewController.m */; };
 		000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */; };
 		000DCE162126CFA9008A2D49 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 000DCE152126CFA9008A2D49 /* ImageCell.m */; };
+		00131EF7214A43B600AD38A4 /* MonthSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00131EF6214A43B600AD38A4 /* MonthSectionController.m */; };
+		00131EFA214A47E700AD38A4 /* DayViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00131EF9214A47E700AD38A4 /* DayViewModel.m */; };
+		00131EFD214A4A9B00AD38A4 /* MonthTitleViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 00131EFC214A4A9B00AD38A4 /* MonthTitleViewModel.m */; };
+		00131F00214A561D00AD38A4 /* CalendarDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00131EFF214A561D00AD38A4 /* CalendarDayCell.m */; };
+		00131F03214A564900AD38A4 /* MonthTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 00131F02214A564900AD38A4 /* MonthTitleCell.m */; };
 		001DD4002133EEF600E8EE44 /* StackedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001DD3FF2133EEF600E8EE44 /* StackedViewController.m */; };
 		001E261B2109A817000C40B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261A2109A817000C40B7 /* AppDelegate.m */; };
 		001E261E2109A817000C40B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 001E261D2109A817000C40B7 /* ViewController.m */; };
@@ -40,7 +45,6 @@
 		002EF428213EA7E2007BF477 /* PersonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF427213EA7E2007BF477 /* PersonModel.m */; };
 		002EF42B213EA96D007BF477 /* PersonCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF42A213EA96D007BF477 /* PersonCell.m */; };
 		002EF42E213EB056007BF477 /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF42D213EB056007BF477 /* CalendarViewController.m */; };
-		002EF434213EB91F007BF477 /* MonthSectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 002EF433213EB91F007BF477 /* MonthSectionController.m */; };
 		00342083211161B5009636A4 /* Demo.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00342082211161B5009636A4 /* Demo.storyboard */; };
 		0034208621116590009636A4 /* StoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0034208521116590009636A4 /* StoryboardViewController.m */; };
 		00342089211172D5009636A4 /* SingleSectionStoryboardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00342088211172D5009636A4 /* SingleSectionStoryboardViewController.m */; };
@@ -96,6 +100,16 @@
 		000DCE122126CC06008A2D49 /* WorkingRangeSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkingRangeSectionController.m; sourceTree = "<group>"; };
 		000DCE142126CFA9008A2D49 /* ImageCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
 		000DCE152126CFA9008A2D49 /* ImageCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		00131EF5214A43B600AD38A4 /* MonthSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthSectionController.h; sourceTree = "<group>"; };
+		00131EF6214A43B600AD38A4 /* MonthSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthSectionController.m; sourceTree = "<group>"; };
+		00131EF8214A47E700AD38A4 /* DayViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DayViewModel.h; sourceTree = "<group>"; };
+		00131EF9214A47E700AD38A4 /* DayViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DayViewModel.m; sourceTree = "<group>"; };
+		00131EFB214A4A9B00AD38A4 /* MonthTitleViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthTitleViewModel.h; sourceTree = "<group>"; };
+		00131EFC214A4A9B00AD38A4 /* MonthTitleViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthTitleViewModel.m; sourceTree = "<group>"; };
+		00131EFE214A561D00AD38A4 /* CalendarDayCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarDayCell.h; sourceTree = "<group>"; };
+		00131EFF214A561D00AD38A4 /* CalendarDayCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarDayCell.m; sourceTree = "<group>"; };
+		00131F01214A564900AD38A4 /* MonthTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthTitleCell.h; sourceTree = "<group>"; };
+		00131F02214A564900AD38A4 /* MonthTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthTitleCell.m; sourceTree = "<group>"; };
 		001DD3FE2133EEF600E8EE44 /* StackedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StackedViewController.h; sourceTree = "<group>"; };
 		001DD3FF2133EEF600E8EE44 /* StackedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StackedViewController.m; sourceTree = "<group>"; };
 		001E26162109A817000C40B7 /* CCIGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CCIGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -149,8 +163,6 @@
 		002EF42A213EA96D007BF477 /* PersonCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonCell.m; sourceTree = "<group>"; };
 		002EF42C213EB056007BF477 /* CalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		002EF42D213EB056007BF477 /* CalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
-		002EF432213EB91F007BF477 /* MonthSectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MonthSectionController.h; sourceTree = "<group>"; };
-		002EF433213EB91F007BF477 /* MonthSectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MonthSectionController.m; sourceTree = "<group>"; };
 		00342082211161B5009636A4 /* Demo.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demo.storyboard; sourceTree = "<group>"; };
 		0034208421116590009636A4 /* StoryboardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StoryboardViewController.h; sourceTree = "<group>"; };
 		0034208521116590009636A4 /* StoryboardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StoryboardViewController.m; sourceTree = "<group>"; };
@@ -371,6 +383,10 @@
 				002EF41B213E8BC4007BF477 /* CommentCell.m */,
 				002EF429213EA96D007BF477 /* PersonCell.h */,
 				002EF42A213EA96D007BF477 /* PersonCell.m */,
+				00131EFE214A561D00AD38A4 /* CalendarDayCell.h */,
+				00131EFF214A561D00AD38A4 /* CalendarDayCell.m */,
+				00131F01214A564900AD38A4 /* MonthTitleCell.h */,
+				00131F02214A564900AD38A4 /* MonthTitleCell.m */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -408,8 +424,8 @@
 				002EF40F213E89CB007BF477 /* PostSectionController.m */,
 				002EF420213EA710007BF477 /* PersonSectionController.h */,
 				002EF421213EA710007BF477 /* PersonSectionController.m */,
-				002EF432213EB91F007BF477 /* MonthSectionController.h */,
-				002EF433213EB91F007BF477 /* MonthSectionController.m */,
+				00131EF5214A43B600AD38A4 /* MonthSectionController.h */,
+				00131EF6214A43B600AD38A4 /* MonthSectionController.m */,
 			);
 			path = SectionControllers;
 			sourceTree = "<group>";
@@ -441,6 +457,10 @@
 				002EF427213EA7E2007BF477 /* PersonModel.m */,
 				00BFA7092147672900F73095 /* Month.h */,
 				00BFA70A2147672900F73095 /* Month.m */,
+				00131EF8214A47E700AD38A4 /* DayViewModel.h */,
+				00131EF9214A47E700AD38A4 /* DayViewModel.m */,
+				00131EFB214A4A9B00AD38A4 /* MonthTitleViewModel.h */,
+				00131EFC214A4A9B00AD38A4 /* MonthTitleViewModel.m */,
 			);
 			path = Item;
 			sourceTree = "<group>";
@@ -587,6 +607,7 @@
 				0067C7B4212EA81400D352F9 /* FullWidthSelfSizingCell.m in Sources */,
 				00A19089211AA005009559BD /* SearchSectionController.m in Sources */,
 				001E261E2109A817000C40B7 /* ViewController.m in Sources */,
+				00131F03214A564900AD38A4 /* MonthTitleCell.m in Sources */,
 				00CA805421258332004D85AB /* ExpandableSectionController.m in Sources */,
 				00CA805A21258372004D85AB /* UserSectionController.m in Sources */,
 				000DCE102126C664008A2D49 /* WorkingRangeViewController.m in Sources */,
@@ -604,6 +625,7 @@
 				00E7EA22212D15060072EEB9 /* FeedItemSectionController.m in Sources */,
 				002EF416213E8BA9007BF477 /* PhotoCell.m in Sources */,
 				002EF428213EA7E2007BF477 /* PersonModel.m in Sources */,
+				00131EF7214A43B600AD38A4 /* MonthSectionController.m in Sources */,
 				0067C7A8212E72D500D352F9 /* SelfSizingCellsViewController.m in Sources */,
 				00898886211D9113009DABDD /* Person.m in Sources */,
 				00B48271211402AB006A185C /* HorizontalSectionController.m in Sources */,
@@ -618,6 +640,7 @@
 				0085E1B9211023790089568D /* EmptyViewController.m in Sources */,
 				00E7EA1F212D149A0072EEB9 /* FeedItem.m in Sources */,
 				000DCE0D2126B544008A2D49 /* StoryboardLabelSectionController.m in Sources */,
+				00131EFA214A47E700AD38A4 /* DayViewModel.m in Sources */,
 				006E9C34212FD5D600FA39B9 /* DisplaySectionController.m in Sources */,
 				002EF419213E8BB7007BF477 /* InteractiveCell.m in Sources */,
 				002EF42B213EA96D007BF477 /* PersonCell.m in Sources */,
@@ -625,11 +648,12 @@
 				00E7EA1C212D0F090072EEB9 /* SupplementaryViewController.m in Sources */,
 				00BFA70B2147672900F73095 /* Month.m in Sources */,
 				000DCE132126CC06008A2D49 /* WorkingRangeSectionController.m in Sources */,
+				00131EFD214A4A9B00AD38A4 /* MonthTitleViewModel.m in Sources */,
 				002EF41F213EA66D007BF477 /* ObjcGeneratedModelDemoViewController.m in Sources */,
 				00A1908C211AEB67009559BD /* SearchCell.m in Sources */,
+				00131F00214A561D00AD38A4 /* CalendarDayCell.m in Sources */,
 				00EE40672123C6A600566532 /* GridItem.m in Sources */,
 				002EF40A213E864D007BF477 /* ObjcDemoViewController.m in Sources */,
-				002EF434213EB91F007BF477 /* MonthSectionController.m in Sources */,
 				00EE40642123C54100566532 /* MixedDataViewController.m in Sources */,
 				0034208621116590009636A4 /* StoryboardViewController.m in Sources */,
 				00898882211D908A009DABDD /* DiffTableViewController.m in Sources */,
