@@ -43,7 +43,7 @@
                    [[DemoItem alloc] initWithName:@"Supplementary Views" controllerClass: @"SupplementaryViewController"],
                    [[DemoItem alloc] initWithName:@"Self-sizing cells" controllerClass: @"SelfSizingCellsViewController"],
                    [[DemoItem alloc] initWithName:@"Display delegate" controllerClass: @"DisplayViewController"],
-                   [[DemoItem alloc] initWithName:@"Stacked Section Controllers" controllerClass: @"StackedViewController"],
+//                   [[DemoItem alloc] initWithName:@"Stacked Section Controllers" controllerClass: @"StackedViewController"],
                    [[DemoItem alloc] initWithName:@"Objc Demo" controllerClass: @"ObjcDemoViewController"],
                    [[DemoItem alloc] initWithName:@"Objc Generated Model Demo" controllerClass: @"ObjcGeneratedModelDemoViewController"],
                    [[DemoItem alloc] initWithName:@"Calendar (auto diffing)" controllerClass: @"CalendarViewController"],

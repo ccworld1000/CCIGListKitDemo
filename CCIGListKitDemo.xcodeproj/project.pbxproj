@@ -578,17 +578,16 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo-resources.sh",
-				"${PODS_ROOT}/CCDebug/CCDebug.LICENSE.txt",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo-resources-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/CCDebug.LICENSE.txt",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo-resources-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CCIGListKitDemo/Pods-CCIGListKitDemo-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

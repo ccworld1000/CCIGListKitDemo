@@ -70,15 +70,15 @@
     return self.data;
 }
 
-- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
-    IGListStackedSectionController *sectionController = [[IGListStackedSectionController alloc] initWithSectionControllers:@[
-                                                                                                                             [WorkingRangeSectionController new],
-                                                                                                                             [DisplaySectionController new],
-                                                                                                                             [HorizontalSectionController new],
-                                                                                                                             ]];
-    sectionController.inset = UIEdgeInsetsMake(0, 0, 20, 0);
-    return sectionController;
-}
+//- (IGListSectionController *)listAdapter:(IGListAdapter *)listAdapter sectionControllerForObject:(id)object {
+//    IGListStackedSectionController *sectionController = [[IGListStackedSectionController alloc] initWithSectionControllers:@[
+//                                                                                                                             [WorkingRangeSectionController new],
+//                                                                                                                             [DisplaySectionController new],
+//                                                                                                                             [HorizontalSectionController new],
+//                                                                                                                             ]];
+//    sectionController.inset = UIEdgeInsetsMake(0, 0, 20, 0);
+//    return sectionController;
+//}
 
 - (nullable UIView *)emptyViewForListAdapter:(IGListAdapter *)listAdapter {
     return nil;
